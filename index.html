@@ -1,19 +1,208 @@
-<!doctype html>
-<html lang="nl">
-	
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Naam van je site en/of pagina</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
+	<title>ISGA: Welcome to the ISGA guide</title>
+	<meta name="viewport" content="width=device-width" /> <!--Hiermee zeg ik dat de website gelezen kan worden op viewport (oftewel mobiele schermen)-->
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+	<header>
+		<section>
+			<a href="#"> <img class="home-logo" src="img/blackoultine2_150x.png" alt="home logo"> </a>
+			<div class="navigation-right">
+				<a href="#"> <img class="search-logo" src="img/search.svg" alt="search icon"> </a>
+				<a href="#"> <img class="shopping-cart-logo" src="img/shopping-cart.svg" alt="shopping cart logo"> </a>
+			</div>
+		</section>
 
-	<script src="scripts/script.js"></script>
-</body>
+		<nav> <!-- Navigation Bar at top of page -->
+			<ul>
+			  <li class="navactive"><a href="index.html">HOME</a> </li> <!-- Home button with/ class="navactive" to add a special effect, because it's active-->
+			  <li><a href="#">SHOP <img class="dropdown-arrow" src="img/dropdown-arrow.png" alt="dropdown arrow"></a> <!--Cinemas Button -->
+			  	<ul> <!-- Adding a dropdown list for specific movies -->
+			  		<li><a href="index.html">Hello There</a></li> <!-- Pathe Cinema button -->
+			  		<li><a href="index.html">....</a></li> <!-- Cinecenter Cinema button -->
+			  		<li><a href="index.html">General Kenobi</a></li> <!-- Kriterion Cinema button -->
+			  	</ul>
+			  </li>
+			  <li><a href="index.html">CONTACT US</a></li> <!-- Movies (selection list) button -->
+			  <li><a href="index.html">ABOUT US</a></li> <!-- Movies (selection list) button -->
+			  <li><a href="index.html">FAQS</a></li> <!-- Movies (selection list) button -->
+			  <li id="account-id"><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!--Ik gebruik een section om een achtergrond foto te tonen die aan de bovenkant fixed staat-->
+
+		<!--Cinema details is to give information about the Cinema in particular-->
+		<article class="cinema-details">
+			<section> <!--Section to make sure the Information elements are displayed next to eachother, and can be any amount of number-->
+				<img src="img/3-phones.png" alt="Fits all phones">
+				<h3>FITS ALL PHONES</h3>
+				<span style="font-weight: normal;">(We're inclusive)</span>
+			</section>	
+			<section>
+				<img src="img/package.png" alt="Fits all phones">
+				<h3>EASY RETURNS</h3>
+				<span style="font-weight: normal;">(ALMOST TOO EASY)</span>
+			</section>
+			<section>
+				<img src="img/ribbon.png" alt="Fits all phones">
+				<h3>LIFETIME WARRANTY</h3>
+				<span style="font-weight: normal;">(AFTERLIFE INCLUDED)</span>
+			</section>
+		</article>
+
+		<section class="images-cover">
+			<h1 class="white-title">THE OHSNAP GRIP<span style="font-weight: normal;">™</span></h1>
+			<p>It’s a grip, stand, magnet, and more. Now available in 16+ color combinations and <b>backed by a lifetime warranty!</b></p>
+			<img src="img/whiteblack_1024x1024.png" alt="Cover image: iets">
+		</section>
+
+		<article class="cinema-details">	
+			<section>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+			</section>	
+			<section>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p> 
+			</section>
+			<section>
+				<h3>Lorem ipsum</h3>
+				<!-- <p><span><img class="address-icon" src="img/location-icon.png" alt="Location icon"> <a href="https://goo.gl/maps/YZjCdVyXecAyuNv9A" target="_blank"><b>Adres:</b> Vijzelstraat 15, 1017 HD Amsterdam</a></span> </p> -->
+				<!-- <p><span><img class="address-icon" src="img/phone-icon.png" alt="Location icon"> <a href="tel:088-515-2050"><b>Telefoon:</b> 088 515 2050</a></span></p> -->
+				<!-- <p><span><img class="address-icon" src="img/website-icon.png" alt="Location icon"> <a href="https://www.pathe.nl/bioscoop/demunt"><b>Website:</b> www.pathe.nl/bioscoop/demunt</a></span></p> -->
+			</section>
+		</article>
+
+		<!--Image cover with text in it-->
+		<section class="cinema-img-cover">
+			<h2 class="white-title">SNAPSTAND™</h2>
+			<img src="img/snapstandblack_1024x1024.png" alt="Cover image: iets">
+		</section>
+
+		<article class="cinema-details">	
+			<section>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+			</section>	
+			<section>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p> 
+			</section>
+			<section>
+				<h3>Lorem ipsum</h3>
+				<!-- <p><span><img class="address-icon" src="img/location-icon.png" alt="Location icon"> <a href="https://goo.gl/maps/YZjCdVyXecAyuNv9A" target="_blank"><b>Adres:</b> Vijzelstraat 15, 1017 HD Amsterdam</a></span> </p> -->
+				<!-- <p><span><img class="address-icon" src="img/phone-icon.png" alt="Location icon"> <a href="tel:088-515-2050"><b>Telefoon:</b> 088 515 2050</a></span></p> -->
+				<!-- <p><span><img class="address-icon" src="img/website-icon.png" alt="Location icon"> <a href="https://www.pathe.nl/bioscoop/demunt"><b>Website:</b> www.pathe.nl/bioscoop/demunt</a></span></p> -->
+			</section>
+		</article>
+	</main>
 	
+	 <!-- <main>
+		Ik gebruik een section om een achtergrond foto te tonen die aan de bovenkant fixed staat
+			<section>
+				<article class="cinema-details">
+					<section>
+						<h3>Welcome to ISGA</h3>
+						<p>Welcome to the ISGA Webpage Guide. Here you will find a fast array of information about Amsterstam Cinemas and the movies that are currently playing.</p>
+					</section>	
+					<section>
+						<h3>Movies</h3>
+						<p>Film reviews and programmes can be found in Amsterdam magazines, cinema foyers and on <a href="https://www.filmladder.nl//"><b>www.filmladder.nl</b>.</a> </p>
+					</section>	
+					<section>
+						<h3>Dutch Language</h3>
+						<p>It is worth mentioning that movies are displayed in their original language, with Dutch subtitles most of the time.</p>
+						<p>18+ movies are <b>never</b> dubbed in the Netherlands.</p>
+					</section>
+				</article>
+			</section> -->
+
+<!-- 			De movies-wrapper(-carousel) wordt gebruikt om films te laten zien in een gallerij vorm. Hiermee wordt alles netjes naast en onder elkaar gezet door Display: Flex;
+			<section class="movies-wrapper-carousel">
+				<h2>Top Rated <a href="movies.html#pathe-movies">See all ›</a> </h2>
+					<hr> Een <hr> omdat dit het makkelijkst was om een horizontale lijn te weergeven
+					<ul>
+						<li> <a href="movies.html#pathe-movies"><img src="img/starwarsriseofskywalker.png" alt="Film: Star Wars: The Rise of Skywalker"></a>
+							<span class="movies-text">Star Wars: The Rise of Skywalker</span>
+						</li>
+						<li> <a href="movies.html#pathe-movies"><img src="img/jumanjinextlevel.jpg" alt="Film: Jumani: The Next Level"></a>
+							<span class="movies-text">Jumani: The Next Level</span>
+						</li>
+						<li> <a href="movies.html#pathe-movies"><img src="img/frozen2.jpg" alt="Film: Frozen 2"></a>
+							<span class="movies-text">Frozen 2</span>
+						</li>				
+						<li> <a href="movies.html#pathe-movies"><img src="img/aprilmayjune.jpg" alt="Film: April, May, June"></a>
+							<span class="movies-text">April, May, June</span>
+						</li>										
+						<li> <a href="movies.html#pathe-movies"><img src="img/lastchristmas.jpg" alt="Film: Last Christmas"></a>
+							<span class="movies-text">Last Christmas</span>
+						</li>
+						<li> <a href="movies.html#pathe-movies"><img src="img/knivesout.jpg" alt="Film: Knives Out"></a>
+							<span class="movies-text">Knives Out</span>
+						</li>										
+						<li> <a href="movies.html#pathe-movies"><img src="img/adamsfamily.jpg" alt="Film: The Addams Family"></a>
+							<span class="movies-text">The Addams Family</span>
+						</li>					
+						<li> <a href="movies.html#pathe-movies"><img src="img/1917.jpg" alt="Film: 1917"></a>
+							<span class="movies-text">1917</span>
+						</li>					
+						<li> <a href="movies.html#pathe-movies"><img src="img/sorrywemissedyou.jpg" alt="Film: Sorry We Missed You"></a>
+							<span class="movies-text">Sorry We Missed You</span>
+						</li>					
+						<li> <a href="movies.html#pathe-movies"><img src="img/deerskin.jpg" alt="Film: Deerskin"></a>
+							<span class="movies-text">Deerskin</span>
+						</li>					
+						<li> <a href="movies.html#pathe-movies"><img src="img/jojorabbit.jpg" alt="Film: Jojo Rabbit"></a>
+							<span class="movies-text">Jojo Rabbit</span>
+						</li>
+					</ul>	
+			</section>
+	</main>  -->
+	
+	<footer>
+		<section class="footer-details">	
+			<section>
+				<h3>Information</h3>
+				<p><img class="address-icon" src="img/location-icon.png" alt="Location icon"> <a href="https://goo.gl/maps/YPgwydAvG31yCbwJA" target="_blank"><b>Adres:</b> Wibautstraat 2-4 1091 GM Amsterdam</a></p>
+				<p><img class="address-icon" src="img/phone-icon.png" alt="Location icon"> <a href="tel:020-599-5555"><b>Telefoon:</b> 020 599 5555</a></p>
+				<p><img class="address-icon" src="img/website-icon.png" alt="Location icon"> <a href="#"><b>Website:</b> www.hva.nl</a></p>
+			</section>	
+			<section class="sitemap-footer">
+				<h3>Sitemap</h3>
+				<p><a href="index.html">Home</a></p>
+				<p><a href="index.html">Shop</a></p>
+				<p><a href="index.html">Contact us</a></p>
+				<p><a href="index.html">About us</a></p>
+				<p><a href="index.html">FAQS</a></p>
+				<p><a href="index.html">Resource List (Bronnenlijst)</a></p>
+			</section>
+
+			<!--contactformulier by Evi van der Linden-->
+		    <form>
+		        <!--naam veld-->
+		        <label for="name">Name</label>
+		        <input type="text" id="name" name="Name" onfocus="this.value=''" placeholder="Your Name" value="Your Name">
+		        <!--email veld-->
+		        <label for="email">Email</label>
+		        <input type="text" id="email" name="email" onfocus="this.value=''" placeholder="Your Email" value="Your Email">
+		        <!--bericht veld-->
+		        <label for="subject">Message</label>
+		        <textarea id="subject" name="subject" placeholder="Your Message" style="height:50px"></textarea>
+		        <!--button submit-->
+		        <input type="submit" value="Submit">
+		    </form>
+
+		</section>
+		<section class="footer-copyright">
+			<p>&copy;2019 - 2020. All rights reserved. Clifton van Henten</p>
+		</section>
+	</footer>
+</body>
 </html>

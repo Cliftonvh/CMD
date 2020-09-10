@@ -1,0 +1,916 @@
+
+@media only screen and (min-height: 830px) {
+
+  ::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar
+  {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+  }
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p { margin-top: 15px; font-family: "Work Sans"; font-size: 18px; font-weight: 400; letter-spacing: 1px; line-height: 22.08px;}
+span { font-family: Karla; font-size: 16px; font-weight: 400; letter-spacing: 0px; line-height: 1.38em;}
+
+body{
+	font-size: 16px;
+  font-family: Karla,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.375;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  /*padding: 85px 0 0 0;*/
+}
+main{
+	height: auto;
+	width: 100%;
+}
+main section{
+	width: 90%;
+	margin: auto;
+}
+
+@media only screen and (min-width: 1370px) {
+
+  main section{
+    width: 85%;
+  }
+}
+
+main section h2{
+  text-align: center;
+}
+main section section{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.red-title{
+	color: #E30B17;
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.5em;
+}
+.white-title{
+  font-family: sans-serif;
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  font-size: 3.5em;
+}
+.white-title span{
+  letter-spacing: 7px;
+  line-height: 66.24px;
+  text-align: center;
+  font-size: 48px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
+
+  .red-title{
+    font-size: 1.5em;
+  }
+  .white-title{
+    font-size: 2em;
+  }
+
+}
+
+@media only screen and (max-width: 360px) and (max-height: 640px) {
+
+  .red-title{
+    font-size: 1.5em;
+  }
+  .white-title{
+    font-size: 2em;
+  }
+
+}
+
+/*Images*/
+.images-cover{
+  /*width: 70%;*/
+  position: relative;
+  margin: auto;
+  max-width:1200px;
+  padding-bottom:21px;
+  padding-top:29px;
+}
+.images-cover img{
+  width: auto;
+  max-height: 1000px;
+  /*box-shadow: 0px 1px 10px #000000;*/
+}
+.images-cover h1, .images-cover h2{
+  /*position: absolute;*/
+  /*bottom: 25%;*/
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  /*text-shadow: 0px 0px 10px #000000;*/
+}
+
+/*******************************************/
+                  /*Header*/
+/*******************************************/
+header{
+  margin: auto;
+  width: 70%;
+}
+header section{
+  top: 10px;
+  width: auto;
+  height: 50px;
+  position: relative;
+  margin: 0 64px 0 64px;
+  padding: 20px;
+}
+
+header section a{
+  position: relative;
+  float: left;
+}
+
+.navigation-right{
+  position: relative;
+  float: right;
+}
+
+#account-id{
+  position: relative;
+  float: right;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  font-size: 0.8125em;
+}
+
+.home-logo{
+
+}
+
+.shopping-cart-logo{
+  margin: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.search-logo{
+  margin: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+
+/*******************************************/
+              /*Navigation Bar*/
+/*******************************************/
+nav{
+  border-top: 1px solid #f2f2f2;
+  margin: 0 66px 0 66px;
+  padding: 0 20px;
+	/*position: relative;*/
+	/*top:0;*/
+	z-index: 1;
+  /*box-shadow: 0px 1px 10px #000000;*/
+  transition: 0.2s;
+}
+nav ul{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background: rgba(0, 0, 0, 0.8);*/
+}
+nav ul li{
+	height: auto;
+	color: white;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+	display: inline;
+	float: left;
+  width: auto;
+}
+nav ul li ul{
+	list-style: none;
+  margin: auto;
+  padding: 0;
+	visibility:hidden;
+  opacity:0;
+  position: absolute;
+  z-index: 99999;
+  /*width:33.3%;*/
+  box-shadow: 0px 1px 1px #000000;
+}
+nav ul li ul li{
+	clear:both;
+  width:100%;
+  border:0 none;
+  background: white;
+}
+nav ul li:hover ul{
+	visibility: visible;
+  opacity: 0.8;
+}
+nav ul li a img{
+ 	width: 9px;
+  height: 6px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+nav ul li a{
+	font-weight: bold;
+	font-size: 0.8em;
+	display: block;
+  color: rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+}
+nav ul li a:hover{
+	background-color: #FFF;
+  color: black;
+}
+.navactive{
+  /*background: rgba(227, 11, 23, 0.8);*/
+  color: black;
+}
+.navactive::after{
+  content: '';
+  border-bottom: 3px solid rgb(232, 170, 170);
+  width: 55%;
+  margin: auto;
+  display: block;
+}
+
+/* Media Queries to ensure every page is responsive on all phones */
+/* Media Querie: Screens like Iphone X and other bigger phones */
+@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
+
+  nav ul li{
+    height: 49px;
+    color: white;
+  }
+
+  nav ul li a{
+    font-size: 0.9em;
+    padding: 14px;
+  }
+
+  nav ul li a img{
+    width: 10px;
+    height: 8px;
+    margin-left: 5px;
+  }
+
+}
+/* Media Querie: Screens like Iphone 5 and other smaller phones */
+@media only screen and (max-width: 360px) and (max-height: 640px){
+
+  nav ul li{
+    height: 49px;
+    color: white;
+  }
+
+  nav ul li a{
+    font-size: 0.70em;
+    padding: 17px
+  }
+
+  nav ul li a img{
+    width: 8px;
+    height: 6px;
+    margin-left: 0;
+  }
+
+}
+
+/* Media Querie: Make sure when in landscape the menu is not obstructing the line of sight */
+@media (orientation: landscape) and (max-width: 1000px){
+  nav ul li{
+    height: 40px;
+    color: white;
+  }
+
+  nav ul li a{
+    font-size: 0.70em;
+    padding: 12px;
+  }
+
+  nav ul li a img{
+    width: 8px;
+    height: 6px;
+    margin-left: 0;
+  }
+
+}
+/*******************************************/
+        /* Movies Gallery Display */
+/*******************************************/
+#pathe-movies{
+  scroll-behavior: smooth;
+}
+
+.movies-wrapper{
+  margin-top: 20px;
+  vertical-align: top;
+}
+.movies-wrapper h2 img{
+  width: 60%;
+  height: auto;
+}
+.movies-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movies-wrapper ul li { 
+  list-style: none;
+  text-align: center;
+  width: 200px;
+  height: 320px;
+  float: left;
+  margin: 20px 0 10px 7px;
+  /*  margin: 20px 10px 70px 0;*/
+  padding: 20px;
+}
+.movies-wrapper ul li a{ 
+  display: inline;
+}
+.movies-wrapper span{
+  color: #808080;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  max-width: 200px;
+}
+.movies-wrapper ul li a img{
+  box-shadow: 0px 0px 8px #000000;
+  width: 220px;
+  height: 295px;
+  -webkit-filter: brightness(100%);
+}
+.movies-wrapper ul li a img:hover{
+  -webkit-filter: brightness(70%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Media Queries to ensure every page is responsive on all phones For Movies Wrapper */
+/* Media Querie: Screens like Iphone X and other bigger phones */
+@media only screen and (min-width: 340px) and (max-width: 420px) and (min-height: 580px) and (max-height: 830px) {
+
+  .movies-wrapper ul li { 
+    width: 100px;
+    height: 160px;
+    margin: 0 10px 30px 0;
+    padding: 15px;
+  }
+
+  .movies-wrapper ul li a img{
+    width: 120px;
+    height: 160px;
+  }
+
+  .movies-wrapper span{
+    font-size: 1em;
+    max-width: 120px;
+  }
+
+}
+/* Media Querie: Screens like Iphone 5 and other smaller phones; */
+@media only screen and (max-width: 340px) and (max-height: 580px){
+
+  .movies-wrapper ul li { 
+    width: 60px;
+    height: 115px;
+    margin: 0 0px 30px 0;
+    padding: 28px;
+  }
+
+  .movies-wrapper ul li a img{
+    width: 100px;
+    height: 140px;
+  }
+
+  .movies-wrapper span{ 
+    font-size: 0.8em;
+    max-width: 120px;
+  }
+
+}
+
+/* Media Querie: Make sure when in landscape the movies are not too big */
+@media (orientation: landscape) and (max-width: 1024px){
+
+  .movies-wrapper ul li { 
+    width: 200px;
+    height: 320px;
+  }
+
+  .movies-wrapper ul li a img{
+    width: 220px;
+    height: 295px;
+  }
+
+  .movies-wrapper span{
+    font-size: 1em;
+    max-width: 120px;
+  }
+
+}
+
+/* Media Querie: Make sure when in landscape the movies are not too big */
+@media (orientation: landscape) and (max-width: 840px){
+
+  .movies-wrapper ul li { 
+    width: 80px;
+    height: 135px;
+    margin: 0 10px 30px 0;
+    padding: 20px;
+  }
+
+  .movies-wrapper ul li a img{
+    width: 120px;
+    height: 160px;
+  }
+
+  .movies-wrapper span{ 
+    font-size: 0.8em;
+    max-width: 120px;
+  }
+
+}
+
+/*******************************************/
+/*Cinema Page (Pathe, Cinecenter, Kriterion*/
+/*******************************************/
+
+.address-icon{
+  width: 12px;
+  height: 16px;
+}
+
+.cinema-img-cover{
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+}
+.cinema-img-cover img{
+  width: auto;
+  /*box-shadow: 0px 1px 10px #000000;*/
+}
+.cinema-img-cover h1, .cinema-img-cover h2{
+  /*position: absolute;*/
+  /*bottom: 14%;*/
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  /*text-shadow: 0px 0px 10px #000000;*/
+}
+
+.cinema-details{
+  background-color: rgb(244, 244, 244);
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.cinema-details section{
+  display: block;
+  margin: auto;
+  /*margin-right: 15px;*/
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.cinema-details section img{
+  padding: 12px;
+  max-width: 100%;
+  height: 135.344px;
+  width: : 135.344px;
+}
+
+.cinema-details section span{
+  text-transform: uppercase;
+  color: rgb(130, 130, 130);
+  width: 75%;
+}
+
+.cinema-details section p a{
+  color: #808080;
+  text-decoration: none;
+}
+
+.cinema-details section p a:hover{
+  color: #E30B17;
+  text-decoration: none;
+}
+
+.cinema-details section h3{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(68, 68, 68);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Media Queries to ensure every page is responsive on all phones */
+/* Media Querie: Screens like Iphone X and other bigger phones */
+@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
+
+  .cinema-details section{
+    width: 75%;
+  }
+
+  .cinema-details section p{
+    width: 100%;
+  }
+
+}
+/* Media Querie: Screens like Iphone 5 and other smaller phones */
+@media only screen and (max-width: 360px) and (max-height: 640px){
+
+  .cinema-details section{
+    width: 75%;
+  }
+
+  .cinema-details section p{
+    width: 100%;
+  }
+
+}
+
+/* Media Querie: Make sure when in landscape the menu is not obstructing the line of sight */
+@media (orientation: landscape) and (max-width: 1000px){
+
+  .cinema-details section{
+    width: 40%;
+    margin-right: 15px;
+  }
+
+  .cinema-details section p{
+    width: 100%;
+  }
+
+}
+
+/*******************************************/
+    /* Movies Gallery Display Carousel*/
+/*******************************************/
+.movies-wrapper-carousel{
+  margin-top: 20px;
+  vertical-align: top;
+}
+.movies-wrapper-carousel h2{
+  text-align: left;
+  font-size: 2em;
+}
+.movies-wrapper-carousel h2 img{
+  width: 60%;
+  height: auto;
+}
+.movies-wrapper-carousel h2 a{
+  color: #6e6e6e;
+  font-size: 0.55em;
+  font-weight: bold;
+  padding: 18px;
+  text-decoration: none;
+}
+.movies-wrapper-carousel h2 a:hover{
+  color: #E30B17;
+}
+.movies-wrapper-carousel ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  min-width: 0;
+  align-items: center;
+}
+.movies-wrapper-carousel ul li { 
+  flex: 0 0 auto;
+  list-style: none;
+  text-align: center;
+  width: 200px;
+  height: 320px;
+  float: left;
+  margin: 20px 10px 70px 0;
+  padding: 20px;
+}
+.movies-wrapper-carousel ul li a{ 
+  display: inline;
+}
+.movies-wrapper-carousel span{
+  color: #6e6e6e;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  max-width: 200px;
+}
+.movies-wrapper-carousel ul li a img{
+  box-shadow: 0px 0px 8px #000000;
+  width: 220px;
+  height: 295px;
+  -webkit-filter: brightness(100%);
+}
+.movies-wrapper-carousel ul li a img:hover{
+  -webkit-filter: brightness(70%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* Media Queries to ensure every page is responsive on all phones For Movies Wrapper */
+/* Media Querie: Screens like Iphone X and other bigger phones */
+@media only screen and (min-width: 340px) and (max-width: 420px) and (min-height: 580px) and (max-height: 830px) {
+
+  .movies-wrapper-carousel h2{
+    font-size: 1.4em;
+  }
+
+  .movies-wrapper-carousel ul li { 
+    width: 100px;
+    height: 160px;
+    margin: 0 10px 70px 0;
+    padding: 20px;
+  }
+
+  .movies-wrapper-carousel ul li a img{
+    width: 120px;
+    height: 160px;
+  }
+
+  .movies-wrapper-carousel span{
+    font-size: 1em;
+    max-width: 120px;
+  }
+
+}
+/* Media Querie: Screens like Iphone 5 and other smaller phones; */
+@media only screen and (max-width: 340px) and (max-height: 580px){
+
+  .movies-wrapper-carousel ul li { 
+    width: 80px;
+    height: 135px;
+    margin: 0 10px 70px 0;
+    padding: 20px;
+  }
+
+  .movies-wrapper-carousel ul li a img{
+    width: 120px;
+    height: 160px;
+  }
+
+  .movies-wrapper-carousel span{ 
+    font-size: 0.8em;
+    max-width: 120px;
+  }
+
+}
+
+/* Media Querie: Make sure when in landscape the movies are not too big */
+@media (orientation: landscape) and (max-width: 1000px){
+
+  .movies-wrapper-carousel ul li { 
+    width: 80px;
+    height: 128px;
+    margin: 0 10px 70px 0;
+    padding: 20px;
+  }
+
+  .movies-wrapper-carousel ul li a img{
+    width: 120px;
+    height: 160px;
+  }
+
+  .movies-wrapper-carousel span{ 
+    font-size: 0.8em;
+    max-width: 120px;
+  }
+
+}
+
+/*******************************************/
+/*            Order button                 */
+/*******************************************/
+.order-button{
+  margin-top: 30px;
+  background-color: #f74851 ;
+  padding: 14px 26px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.0em;
+  color: white;
+  box-shadow: 0px 1px 5px #000000
+}
+
+.order-button:hover{
+  background-color: #808080;
+  transition: .5s;
+}
+
+.cinema-quality-logo{
+  max-height: 15px;
+  width: auto;
+}
+
+.movie-facts{
+  font-size: 2em;
+}
+
+/*Footer*/
+footer {
+	width: 100%;
+	background-color: #000;
+  color: #fff;
+  box-shadow: 0px 1px 10px #000000;
+}
+.sitemap-footer p{
+  margin-top: 5px;
+}
+
+footer section{
+}
+.footer-copyright{
+  text-align: center;
+}
+
+/*******************************************/
+/*Footer Details*/
+/*******************************************/
+
+.footer-details{
+  padding-top: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-details section{
+  margin: 0;
+  margin-right: 15px;
+  width: 25%;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer-details section p{
+  color: #808080;
+}
+
+.footer-details section p a{
+  color: #808080;
+  text-decoration: none;
+}
+
+.footer-details section p a:hover{
+  color: #E30B17;
+  text-decoration: none;
+}
+
+.footer-details form{
+  margin: 0;
+  margin-right: 15px;
+  width: 25%;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer-details form input[type=text], textarea { /*opmaak van alle text inputs en textarea*/
+  width: 100%;
+  color: #616569;
+  padding: 6px;
+  background-color: #DFDFDF;
+  border-style: none;
+  border-radius: 3px; /*lichtelijke rondingen*/
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+.footer-details form input[type=submit] { /*de submit button opmaak*/
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; /*de cursor aanpassen als je er overheen gaat*/
+}
+
+.footer-details form input[type=submit]:hover{ /*over de button hoveren*/
+  background-color: #E30B17;
+  /*transition: .2s;*/
+}
+
+/* Media Queries to ensure every page is responsive on all phones */
+/* Media Querie: Screens like Iphone X and other bigger phones */
+@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
+
+  .footer-details section{
+    width: 75%;
+  }
+
+  .footer-details section p{
+    width: 90%;
+  }
+
+  .footer-details form{
+    width: 75%;
+  }
+
+}
+/* Media Querie: Screens like Iphone 5 and other smaller phones */
+@media only screen and (max-width: 360px) and (max-height: 640px){
+
+  .footer-details section{
+    width: 75%;
+  }
+
+  .footer-details section p{
+    width: 90%;
+  }
+
+  .footer-details form{
+    width: 75%;
+  }
+
+}
+
+/* Media Querie: Make sure when in landscape the menu is not obstructing the line of sight */
+@media (orientation: landscape) and (max-width: 1000px){
+
+  .footer-details section{
+    width: 40%;
+    margin-right: 15px;
+  }
+
+  .footer-details section p{
+    width: 90%;
+  }
+
+  .footer-details form{
+    width: 75%;
+  }
+
+}
+
+/*Extra bronnenlijst*/
+.bronnenlijst-wrapper ul li{
+  text-align: left;
+  width: 100%;
+  list-style-type: none;
+  margin: 10px auto;
+}
+
+.bronnenlijst-wrapper ul li a{
+  color: #6e6e6e;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  max-width: 100%;
+}
+
+.footer-copyright{
+  /*position: absolute;*/
+  padding-bottom: 10px;
+}
