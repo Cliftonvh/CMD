@@ -48,15 +48,8 @@ main{
 	width: 100%;
 }
 main section{
-	width: 90%;
+	width: 100%;
 	margin: auto;
-}
-
-@media only screen and (min-width: 1370px) {
-
-  main section{
-    width: 85%;
-  }
 }
 
 main section h2{
@@ -498,48 +491,52 @@ nav ul li a:hover{
 
 .cinema-details{
   background-color: rgb(244, 244, 244);
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+}
+
+.cinema-details article{
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 50px;
+  padding: 20px 100px;
+  max-width: 1200px;
 }
 
-.cinema-details section{
+.cinema-details article section{
   display: block;
   margin: auto;
   /*margin-right: 15px;*/
   width: 20%;
   padding: 10px;
   text-align: center;
-  justify-content: center;
+  justify-content: center; 
 }
 
-.cinema-details section img{
-  padding: 12px;
+.cinema-details article section img{
   max-width: 100%;
   height: 135.344px;
   width: : 135.344px;
 }
 
-.cinema-details section span{
+.cinema-details article section span{
   text-transform: uppercase;
   color: rgb(130, 130, 130);
   width: 75%;
 }
 
-.cinema-details section p a{
+.cinema-details article section p a{
   color: #808080;
   text-decoration: none;
 }
 
-.cinema-details section p a:hover{
+.cinema-details article section p a:hover{
   color: #E30B17;
   text-decoration: none;
 }
 
-.cinema-details section h3{
+.cinema-details article section h3{
   letter-spacing: 1px;
   text-transform: uppercase;
   color: rgb(68, 68, 68);
