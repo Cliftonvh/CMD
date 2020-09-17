@@ -40,7 +40,7 @@ Website: http://217.123.119.144/fed/
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Heb tot nu toe de website nagemaakt, en dat ging hartstikke goed. Ik had geen moeite met de positionering van de elementen.
 
 **Screenshot(s):**
 
@@ -48,11 +48,16 @@ Website: http://217.123.119.144/fed/
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+We hebben samen in ons groepje besproken om de volgende punten aan bot te laten komen:
+
+- Hoe krijg ik NOS's manier van responsive voor elkaar met coderen? (dingen komen en dingen verdwijnen met het schalen) 
+- Wat kan ik op mijn site met Javascript gaan doen?
+- Hoe laat ik de "tour de france" foto inzoomen op zichzelf bij en hoover maar ervoor zorgen dat niet de height en width veranderen?
+
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+- 
 
 
 
