@@ -73,7 +73,7 @@ Dit was bijvoorbeeld de laatste vraag.
 
 **Je startniveau:** Zwart
 
-**Je focus:** Surface Plane en Responsiveness
+**Je focus:** Surface Plane
 
 **Je opdracht:** https://ohsnap.com/
 
