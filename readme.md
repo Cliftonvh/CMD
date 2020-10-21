@@ -35,7 +35,7 @@ Ik heb me hierna volledig gefocussed op het werkend krijgen van de micro-interac
 
 Ik heb dus besloten om toch maar voor alleen Surface Plane te kiezen, omdat ik dit ook het leukste vind om te doen.
 
-
+Ik heb door tijdslimiet geen 2e pagina kunnen maken, maar de functionaliteiten van die 2e pagina komen terug in de homepagina, waar ik een micro interactie volledig werkend heb kunnen krijgen. Deze interactie wordt ook gebruikt op de details pagina. Hierin is het namaken van de 2e pagina, alleen het overnemen van de structuur (html) en opmaak (css).
 
 ## Voortgang 2 (week 5)
 
