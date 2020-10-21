@@ -9,8 +9,8 @@ Website: http://217.123.119.144/fed/
 
 ## Bronnenlijst
 1. https://ohsnap.com/
-2. -bron 2-
-3. -...-
+2. w3schools.com - Tutorials / hulp / vraag & antwoord
+3. stackoverflow.com - Tutorials / hulp / vraag & antwoord
 
 
 
@@ -20,13 +20,21 @@ Website: http://217.123.119.144/fed/
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
+![Laatste progressie](images/screenshot-1.png)
+![Laatste progressie](images/screenshot-2.png)
+![Laatste progressie](images/screenshot-3.png)
+![Laatste progressie](images/screenshot-4.png)
+![Laatste progressie](images/screenshot-5.png)
+![Laatste progressie](images/screenshot-6.png)
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Ik heb door internet problemen geen voortgangsgesprek kunnen houden. Ik weet dat hieruit was gekomen dat ik op de goede weg was, maar dat er nog veel te doen was, en dat ik aan de bak moest in de vakantie om het allemaal bij te spijkeren.
+
+Ik heb me hierna volledig gefocussed op het werkend krijgen van de micro-interacties, dit was omdat ik ervoor heb gekozen om niet responsiveness te kiezen, maar surface-plane. De reden hierachter is omdat ik bij de vorige keer dat we moesten werken met html/css, ik mijn website responsive gemaakt had en hier niet verder naar omgekeken werd. Dit was voor mij echt heel jammer, omdat ik er ongelofelijk veel tijd in had gestoken.
+
+Ik heb dus besloten om toch maar voor alleen Surface Plane te kiezen, omdat ik dit ook het leukste vind om te doen.
 
 
 
