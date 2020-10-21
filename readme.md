@@ -20,7 +20,6 @@ Website: http://217.123.119.144/fed/
 
 **Screenshot(s):**
 
-![Laatste progressie](images/screenshot-1.png)
 ![Laatste progressie](images/screenshot-2.png)
 ![Laatste progressie](images/screenshot-3.png)
 ![Laatste progressie](images/screenshot-4.png)
