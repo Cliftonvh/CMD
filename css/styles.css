@@ -1,4 +1,3 @@
-
 @media only screen and (min-height: 830px) {
 
   ::-webkit-scrollbar-track
@@ -28,28 +27,32 @@
   padding: 0;
 }
 
-p { margin-top: 15px; font-family: "Work Sans"; font-size: 18px; font-weight: 400; letter-spacing: 1px; line-height: 22.08px;}
-span { font-family: Karla; font-size: 16px; font-weight: 400; letter-spacing: 0px; line-height: 1.38em;}
+p { margin-top: 15px; font-family: "Work Sans"; font-size: 18px; font-weight: 400; line-height: 1.6em; text-align: center;}
+span { font-family: Karla; font-size: 16px; font-weight: 400; letter-spacing: 0px; line-height: 1.38em; text-align: center;}
+h1, h2, h3{ font-family: Futura,sans-serif; font-style: normal; font-weight: 600; font-size: 1.875em; text-align: center; margin-top: 15px;}
+h4, h5, h6{ font-family: Futura,sans-serif; font-style: normal; font-weight: 600; text-align: center; margin-top: 15px;}
 
-body{
-	font-size: 16px;
+html,body{
+  font-size: 16px;
   font-family: Karla,sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #666;
+/*  color: #666;*/
   line-height: 1.375;
-  text-align: center;
   width: 100%;
-  margin: 0;
-  /*padding: 85px 0 0 0;*/
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 main{
-	height: auto;
-	width: 100%;
+  height: auto;
+  margin: auto;
+  width: 100%;
 }
 main section{
-	width: 100%;
-	margin: auto;
+  width: 85%;
+  margin: auto;
 }
 
 main section h2{
@@ -59,108 +62,18 @@ main section section{
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.red-title{
-	color: #E30B17;
-	font-weight: bold;
-	text-align: center;
-	font-size: 2.5em;
-}
-.white-title{
-  font-family: sans-serif;
-  color: black;
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  font-size: 3.5em;
-}
-.white-title span{
-  letter-spacing: 7px;
-  line-height: 66.24px;
-  text-align: center;
-  font-size: 48px;
-}
-
-@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
-
-  .red-title{
-    font-size: 1.5em;
-  }
-  .white-title{
-    font-size: 2em;
-  }
-
-}
-
-@media only screen and (max-width: 360px) and (max-height: 640px) {
-
-  .red-title{
-    font-size: 1.5em;
-  }
-  .white-title{
-    font-size: 2em;
-  }
-
-}
-
-/*Images*/
-.images-cover{
-  /*width: 70%;*/
-  position: relative;
-  margin: auto;
-  max-width:1200px;
-  padding-bottom:21px;
-  padding-top:29px;
-}
-.images-cover img{
-  width: auto;
-  max-height: 1000px;
-  /*box-shadow: 0px 1px 10px #000000;*/
-}
-.images-cover h1, .images-cover h2{
-  /*position: absolute;*/
-  /*bottom: 25%;*/
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  /*text-shadow: 0px 0px 10px #000000;*/
-}
 
 /*******************************************/
                   /*Header*/
 /*******************************************/
 header{
   margin: auto;
-  width: 70%;
-}
-header section{
-  top: 10px;
-  width: auto;
-  height: 50px;
-  position: relative;
-  margin: 0 64px 0 64px;
-  padding: 20px;
-}
-
-header section a{
-  position: relative;
-  float: left;
+  width: 100%;
 }
 
 .navigation-right{
   position: relative;
   float: right;
-}
-
-#account-id{
-  position: relative;
-  float: right;
-  display: inline-block;
-  color: rgba(0,0,0,0.6);
-  font-size: 0.8125em;
-}
-
-.home-logo{
-
 }
 
 .shopping-cart-logo{
@@ -175,589 +88,507 @@ header section a{
   height: 22px;
 }
 
-
 /*******************************************/
               /*Navigation Bar*/
 /*******************************************/
-nav{
-  border-top: 1px solid #f2f2f2;
-  margin: 0 66px 0 66px;
-  padding: 0 20px;
-	/*position: relative;*/
-	/*top:0;*/
-	z-index: 1;
-  /*box-shadow: 0px 1px 10px #000000;*/
-  transition: 0.2s;
+
+/* nav toggle */
+.nav-drawer {
+  cursor: pointer;
+  height: 2rem;
+  position: relative;
+  width: 2.3rem;
+  z-index: 2;
 }
-nav ul{
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /*background: rgba(0, 0, 0, 0.8);*/
-}
-nav ul li{
-	height: auto;
-	color: white;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-	display: inline;
-	float: left;
-  width: auto;
-}
-nav ul li ul{
-	list-style: none;
-  margin: auto;
-  padding: 0;
-	visibility:hidden;
-  opacity:0;
-  position: absolute;
-  z-index: 99999;
-  /*width:33.3%;*/
-  box-shadow: 0px 1px 1px #000000;
-}
-nav ul li ul li{
-	clear:both;
-  width:100%;
-  border:0 none;
-  background: white;
-}
-nav ul li:hover ul{
-	visibility: visible;
+.nav-drawer:hover {
   opacity: 0.8;
 }
-nav ul li a img{
- 	width: 9px;
+.nav-drawer .nav-drawer-bar,
+.nav-drawer .nav-drawer-bar::after,
+.nav-drawer .nav-drawer-bar::before {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #e9b9b9;
+  content: "";
+  height: 0.25rem;
+  transition: all 0.5s;
+  width: 100%;
+  margin-left: -14.5px;
+  left: 14.5px;
+}
+.nav-drawer .nav-drawer-bar {
+  margin-top: 0;
+}
+.nav-drawer .nav-drawer-bar::after {
+  margin-top: 0.8rem;
+}
+.nav-drawer .nav-drawer-bar::before {
+  margin-top: -0.8rem;
+}
+.nav-drawer.expanded .nav-drawer-bar {
+  background: transparent;
+}
+.nav-drawer.expanded .nav-drawer-bar::after, .nav-drawer.expanded .nav-drawer-bar::before {
+  background: #e9b9b9;
+  margin-top: 0;
+}
+.nav-drawer.expanded .nav-drawer-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.nav-drawer.expanded .nav-drawer-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+nav:nth-of-type(1){
+  background: white;
+  -webkit-box-shadow: 3px 0px 4px -2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 3px 0px 4px -2px rgba(0,0,0,0.4);
+  box-shadow: 3px 0px 4px -2px rgba(0,0,0,0.4);
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
+  top: 0;
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 1;
+}
+
+nav:nth-of-type(1) ul{
+  display: flex;
+  align-items: center;
+  padding: 15px 5px 0px 5px;
+}
+nav:nth-of-type(1) ul li{
+  height: auto;
+  color: white;
+  margin: 0 auto;
+}
+
+/*******************************************/
+            /*Hamburger Menu*/
+/*******************************************/
+
+nav:nth-of-type(2){
+  background: white;
+  -webkit-box-shadow: 3px 0px 4px -2px rgba(0,0,0,0.4);
+  -moz-box-shadow: 3px 0px 4px -2px rgba(0,0,0,0.4);
+  box-shadow: 3px 0px 4px -2px rgba(0,0,0,0.4);
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
+  height: 100%;
+  left: -25rem;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s;
+  width: 20rem;
+  z-index: 1;
+  text-align: left;
+}
+nav:nth-of-type(2).expanded{
+  left: 0;
+}
+nav:nth-of-type(2) a{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+nav:nth-of-type(2) ul{
+  list-style: none;
+  margin-top: 4rem;
+  padding: 0;
+}
+nav:nth-of-type(2) ul li{
+  height: auto;
+  color: white;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  display: block;
+  width: auto;
+}
+.toggle-menu-button-shop, .toggle-menu-button-faq{
+  border-radius: 3px;
+  padding: 0px 15px;
+  float: right;
+}
+.toggle-menu-button-shop span, .toggle-menu-button-faq span{
+  font-weight: bold;
+  color: #262626;
+  font-size: 1em;
+}
+nav:nth-of-type(2) ul li form{
+  padding-top: 20px;
+}
+nav:nth-of-type(2) ul li form input{
+  font-size: 0.65em;
+  padding: 10px 0 10px 20px;
+  width: 80%;
+}
+nav:nth-of-type(2) ul li form button img{
+  width: 20px;
+  height: auto;
+}
+nav:nth-of-type(2) ul li a{
+  font-weight: bold;
+  font-style: normal;
+  font-size: 26px;
+  color: black;
+  text-align: left;
+  padding: 18px;
+  text-decoration: none;
+}
+nav:nth-of-type(2) ul li a:hover{
+  background-color: #FFF;
+  color: black;
+}
+nav:nth-of-type(2) ul li ul{
+  display: none;
+  list-style: none;
+  margin: auto;
+  padding: 20px 0;
+  visibility:hidden;
+  z-index: 99999;
+}
+nav:nth-of-type(2) ul li ul li{
+  clear:both;
+  border:0 none;
+  background: white;
+  padding: 0px;
+}
+nav:nth-of-type(2) ul li ul li a{
+  font-weight: 400;
+  color: #666;
+  font-size: 0.5em;
+  padding: 0px 20px;
+}
+nav:nth-of-type(2) ul li:hover ul{
+  visibility: visible;
+  opacity: 0.8;
+}
+nav:nth-of-type(2) ul li a img{
+  width: 9px;
   height: 6px;
   margin-left: 5px;
   margin-bottom: 2px;
 }
-nav ul li a{
-	font-weight: bold;
-	font-size: 0.8em;
-	display: block;
-  color: rgba(0,0,0,0.6);
-  text-align: center;
-  padding: 18px;
-  text-decoration: none;
-}
-nav ul li a:hover{
-	background-color: #FFF;
-  color: black;
-}
-.navactive{
-  /*background: rgba(227, 11, 23, 0.8);*/
-  color: black;
-}
-.navactive::after{
-  content: '';
-  border-bottom: 3px solid rgb(232, 170, 170);
-  width: 55%;
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
   margin: auto;
+  max-height: ;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  text-align: left;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-container article section {
+  position: absolute;
+  top: 8px;
+  padding: 0 20px;
+}
+.slideshow-container article section h1 {
+  font-size: 2.6em;
+  line-height: 1;
+  text-align: left;
+}
+
+/* Caption text */
+.slideshow-container article section h1 span {
+  text-align: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* Caption text */
+.slideshow-container article:nth-of-type(3) section a {
+  padding: 8px 20px;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 15px 20px 15px 20px;
+  border-radius: 4px;
+  border-color: black;
+  border-width: 1.5px;
+  border-style: solid;
+  font-family: Work Sans
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+
+.slideshow-container article:nth-of-type(2) section a{
+  padding: 8px 20px;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: black;
+  padding: 15px 20px 15px 20px;
+  border-radius: 4px;
+  border-color: white;
+  border-width: 1.5px;
+  border-style: solid;
+  font-family: Work Sans
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+
+.slideshow-container article:nth-of-type(1) section a{
+  padding: 8px 20px;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: black;
+  padding: 15px 20px 15px 20px;
+  border-radius: 4px;
+  border-color: black;
+  border-width: 1.5px;
+  border-style: solid;
+  font-family: Work Sans
+  letter-spacing: 0.15em;
+  opacity: 1;
+}
+
+.slideshow-container article section a span{
+  color: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slideshow-container section {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+input, textarea, select, button{
+  background-color: #ffffff;
+  color: #333;
+  border: 0;
+  /*max-width: 100%;*/
+}
+
+/*3 foto's introductie*/
+main article{
+  margin-top: 5%;
+  display: flex;
+}
+
+main article section{
+  flex-direction: row;
+  text-align: center;
+}
+
+main article section img{
+  height: auto;
+  width: 100px;
+}
+
+main article section h3{
+  font-size: 13px;
+  color: #444444;
+  letter-spacing: 1px;
+  line-height: 1.38em;
+}
+
+main article section p{
+  font-size: 8px;
+}
+
+/*introductie tekst*/
+.intro-stuk{
+  margin-bottom: 15%;
+}
+
+main section:nth-of-type(1) h1, main section:nth-of-type(2) h1, .snapstuff h1{
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #030303;
+  position: relative;
+  padding: 3px;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+main section img{
+  width: 100%;
+  height: auto;
+}
+
+main section hr{
+  width: 5%;
+  margin: auto;
+}
+
+.intro-stuk p{
+  font-size: 18px;
+  letter-spacing: 0.8px;;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+iframe {
+  max-width: calc(100vh); 
+  height: calc(100vw);
+  border-width: 0;
+  border-style: none;
+  border-color: none;
+  border-image: none;
+  display: block;
+  margin: auto;
+}
+
+/*ohsnap grip stuk*/
+.ohsnap-grip h3{
+  color: #a3a3a3;
+  font-size: 1.4em;
+  margin-top: -10px;
+  font-family: Futura;
+}
+
+.ohsnap-grip img{
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.button-div button{
+  width: 100%;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: #0a0a0a;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding: 17px 45px;
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.button-div button:nth-of-type(2) {
+  background-color: #c1c1c1;
+  margin-top: 2%;
+}
+
+.ohsnap-grip h4{
+  text-align: center;
+  margin-top: 5%;
+  font-size: 16px;
+  line-height: 1.38em;
+  letter-spacing: 0px;
+  font-family: Work Sans;
+  color: #424242;
+  text-transform: none;
+}
+
+.ohsnap-grip div{
+  padding: 20px;
+}
+
+.ohsnap-grip div label{
+  padding-bottom: 20px;
   display: block;
 }
 
-/* Media Queries to ensure every page is responsive on all phones */
-/* Media Querie: Screens like Iphone X and other bigger phones */
-@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
-
-  nav ul li{
-    height: 49px;
-    color: white;
-  }
-
-  nav ul li a{
-    font-size: 0.9em;
-    padding: 14px;
-  }
-
-  nav ul li a img{
-    width: 10px;
-    height: 8px;
-    margin-left: 5px;
-  }
-
-}
-/* Media Querie: Screens like Iphone 5 and other smaller phones */
-@media only screen and (max-width: 360px) and (max-height: 640px){
-
-  nav ul li{
-    height: 49px;
-    color: white;
-  }
-
-  nav ul li a{
-    font-size: 0.70em;
-    padding: 17px
-  }
-
-  nav ul li a img{
-    width: 8px;
-    height: 6px;
-    margin-left: 0;
-  }
-
+.ohsnap-grip-button{
+  padding: 25px 25px;
+  box-shadow: 0px 0px 0px 1px #d6d6d6;
+  margin-bottom: 15px;
+  margin-right: 14px;
+  border-radius: 100px;
 }
 
-/* Media Querie: Make sure when in landscape the menu is not obstructing the line of sight */
-@media (orientation: landscape) and (max-width: 1000px){
-  nav ul li{
-    height: 40px;
-    color: white;
-  }
-
-  nav ul li a{
-    font-size: 0.70em;
-    padding: 12px;
-  }
-
-  nav ul li a img{
-    width: 8px;
-    height: 6px;
-    margin-left: 0;
-  }
-
-}
-/*******************************************/
-        /* Movies Gallery Display */
-/*******************************************/
-#pathe-movies{
-  scroll-behavior: smooth;
+.ohsnap-grip-button.selected{
+  border: 1px solid black;
 }
 
-.movies-wrapper{
-  margin-top: 20px;
-  vertical-align: top;
-}
-.movies-wrapper h2 img{
-  width: 60%;
-  height: auto;
-}
-.movies-wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.movies-wrapper ul li { 
-  list-style: none;
-  text-align: center;
-  width: 200px;
-  height: 320px;
-  float: left;
-  margin: 20px 0 10px 7px;
-  /*  margin: 20px 10px 70px 0;*/
-  padding: 20px;
-}
-.movies-wrapper ul li a{ 
-  display: inline;
-}
-.movies-wrapper span{
-  color: #808080;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1em;
-  max-width: 200px;
-}
-.movies-wrapper ul li a img{
-  box-shadow: 0px 0px 8px #000000;
-  width: 220px;
-  height: 295px;
-  -webkit-filter: brightness(100%);
-}
-.movies-wrapper ul li a img:hover{
-  -webkit-filter: brightness(70%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+/*snapstuff*/
+.snapstuff{
+  margin-top: 30%;
+  margin: auto;
+  background-color: #f6f6f6;
+  padding-top: 30%; 
+  padding-bottom: 30%;
 }
 
-/* Media Queries to ensure every page is responsive on all phones For Movies Wrapper */
-/* Media Querie: Screens like Iphone X and other bigger phones */
-@media only screen and (min-width: 340px) and (max-width: 420px) and (min-height: 580px) and (max-height: 830px) {
-
-  .movies-wrapper ul li { 
-    width: 100px;
-    height: 160px;
-    margin: 0 10px 30px 0;
-    padding: 15px;
-  }
-
-  .movies-wrapper ul li a img{
-    width: 120px;
-    height: 160px;
-  }
-
-  .movies-wrapper span{
-    font-size: 1em;
-    max-width: 120px;
-  }
-
+.snapstuff img{
+  margin: auto;
 }
-/* Media Querie: Screens like Iphone 5 and other smaller phones; */
-@media only screen and (max-width: 340px) and (max-height: 580px){
-
-  .movies-wrapper ul li { 
-    width: 60px;
-    height: 115px;
-    margin: 0 0px 30px 0;
-    padding: 28px;
-  }
-
-  .movies-wrapper ul li a img{
-    width: 100px;
-    height: 140px;
-  }
-
-  .movies-wrapper span{ 
-    font-size: 0.8em;
-    max-width: 120px;
-  }
-
-}
-
-/* Media Querie: Make sure when in landscape the movies are not too big */
-@media (orientation: landscape) and (max-width: 1024px){
-
-  .movies-wrapper ul li { 
-    width: 200px;
-    height: 320px;
-  }
-
-  .movies-wrapper ul li a img{
-    width: 220px;
-    height: 295px;
-  }
-
-  .movies-wrapper span{
-    font-size: 1em;
-    max-width: 120px;
-  }
-
-}
-
-/* Media Querie: Make sure when in landscape the movies are not too big */
-@media (orientation: landscape) and (max-width: 840px){
-
-  .movies-wrapper ul li { 
-    width: 80px;
-    height: 135px;
-    margin: 0 10px 30px 0;
-    padding: 20px;
-  }
-
-  .movies-wrapper ul li a img{
-    width: 120px;
-    height: 160px;
-  }
-
-  .movies-wrapper span{ 
-    font-size: 0.8em;
-    max-width: 120px;
-  }
-
-}
-
-/*******************************************/
-/*Cinema Page (Pathe, Cinecenter, Kriterion*/
-/*******************************************/
 
 .address-icon{
   width: 12px;
   height: 16px;
 }
 
-.cinema-img-cover{
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-}
-.cinema-img-cover img{
-  width: auto;
-  /*box-shadow: 0px 1px 10px #000000;*/
-}
-.cinema-img-cover h1, .cinema-img-cover h2{
-  /*position: absolute;*/
-  /*bottom: 14%;*/
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  /*text-shadow: 0px 0px 10px #000000;*/
-}
-
-.cinema-details{
-  background-color: rgb(244, 244, 244);
-  margin: 0 auto 50px;
-}
-
-.cinema-details article{
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 50px;
-  padding: 20px 100px;
-  max-width: 1200px;
-}
-
-.cinema-details article section{
-  display: block;
-  margin: auto;
-  /*margin-right: 15px;*/
-  width: 20%;
-  padding: 10px;
-  text-align: center;
-  justify-content: center; 
-}
-
-.cinema-details article section img{
-  max-width: 100%;
-  height: 135.344px;
-  width: : 135.344px;
-}
-
-.cinema-details article section span{
-  text-transform: uppercase;
-  color: rgb(130, 130, 130);
-  width: 75%;
-}
-
-.cinema-details article section p a{
-  color: #808080;
-  text-decoration: none;
-}
-
-.cinema-details article section p a:hover{
-  color: #E30B17;
-  text-decoration: none;
-}
-
-.cinema-details article section h3{
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgb(68, 68, 68);
-  font-size: 18px;
-  font-weight: 400;
-}
-
-/* Media Queries to ensure every page is responsive on all phones */
-/* Media Querie: Screens like Iphone X and other bigger phones */
-@media only screen and (min-width: 360px) and (max-width: 500px) and (min-height: 640px) and (max-height: 830px) {
-
-  .cinema-details section{
-    width: 75%;
-  }
-
-  .cinema-details section p{
-    width: 100%;
-  }
-
-}
-/* Media Querie: Screens like Iphone 5 and other smaller phones */
-@media only screen and (max-width: 360px) and (max-height: 640px){
-
-  .cinema-details section{
-    width: 75%;
-  }
-
-  .cinema-details section p{
-    width: 100%;
-  }
-
-}
-
-/* Media Querie: Make sure when in landscape the menu is not obstructing the line of sight */
-@media (orientation: landscape) and (max-width: 1000px){
-
-  .cinema-details section{
-    width: 40%;
-    margin-right: 15px;
-  }
-
-  .cinema-details section p{
-    width: 100%;
-  }
-
-}
-
-/*******************************************/
-    /* Movies Gallery Display Carousel*/
-/*******************************************/
-.movies-wrapper-carousel{
-  margin-top: 20px;
-  vertical-align: top;
-}
-.movies-wrapper-carousel h2{
-  text-align: left;
-  font-size: 2em;
-}
-.movies-wrapper-carousel h2 img{
-  width: 60%;
-  height: auto;
-}
-.movies-wrapper-carousel h2 a{
-  color: #6e6e6e;
-  font-size: 0.55em;
-  font-weight: bold;
-  padding: 18px;
-  text-decoration: none;
-}
-.movies-wrapper-carousel h2 a:hover{
-  color: #E30B17;
-}
-.movies-wrapper-carousel ul {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  min-width: 0;
-  align-items: center;
-}
-.movies-wrapper-carousel ul li { 
-  flex: 0 0 auto;
-  list-style: none;
-  text-align: center;
-  width: 200px;
-  height: 320px;
-  float: left;
-  margin: 20px 10px 70px 0;
-  padding: 20px;
-}
-.movies-wrapper-carousel ul li a{ 
-  display: inline;
-}
-.movies-wrapper-carousel span{
-  color: #6e6e6e;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1em;
-  max-width: 200px;
-}
-.movies-wrapper-carousel ul li a img{
-  box-shadow: 0px 0px 8px #000000;
-  width: 220px;
-  height: 295px;
-  -webkit-filter: brightness(100%);
-}
-.movies-wrapper-carousel ul li a img:hover{
-  -webkit-filter: brightness(70%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-/* Media Queries to ensure every page is responsive on all phones For Movies Wrapper */
-/* Media Querie: Screens like Iphone X and other bigger phones */
-@media only screen and (min-width: 340px) and (max-width: 420px) and (min-height: 580px) and (max-height: 830px) {
-
-  .movies-wrapper-carousel h2{
-    font-size: 1.4em;
-  }
-
-  .movies-wrapper-carousel ul li { 
-    width: 100px;
-    height: 160px;
-    margin: 0 10px 70px 0;
-    padding: 20px;
-  }
-
-  .movies-wrapper-carousel ul li a img{
-    width: 120px;
-    height: 160px;
-  }
-
-  .movies-wrapper-carousel span{
-    font-size: 1em;
-    max-width: 120px;
-  }
-
-}
-/* Media Querie: Screens like Iphone 5 and other smaller phones; */
-@media only screen and (max-width: 340px) and (max-height: 580px){
-
-  .movies-wrapper-carousel ul li { 
-    width: 80px;
-    height: 135px;
-    margin: 0 10px 70px 0;
-    padding: 20px;
-  }
-
-  .movies-wrapper-carousel ul li a img{
-    width: 120px;
-    height: 160px;
-  }
-
-  .movies-wrapper-carousel span{ 
-    font-size: 0.8em;
-    max-width: 120px;
-  }
-
-}
-
-/* Media Querie: Make sure when in landscape the movies are not too big */
-@media (orientation: landscape) and (max-width: 1000px){
-
-  .movies-wrapper-carousel ul li { 
-    width: 80px;
-    height: 128px;
-    margin: 0 10px 70px 0;
-    padding: 20px;
-  }
-
-  .movies-wrapper-carousel ul li a img{
-    width: 120px;
-    height: 160px;
-  }
-
-  .movies-wrapper-carousel span{ 
-    font-size: 0.8em;
-    max-width: 120px;
-  }
-
-}
-
-/*******************************************/
-/*            Order button                 */
-/*******************************************/
-.order-button{
-  margin-top: 30px;
-  background-color: #f74851 ;
-  padding: 14px 26px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1.0em;
-  color: white;
-  box-shadow: 0px 1px 5px #000000
-}
-
-.order-button:hover{
-  background-color: #808080;
-  transition: .5s;
-}
-
-.cinema-quality-logo{
-  max-height: 15px;
-  width: auto;
-}
-
-.movie-facts{
-  font-size: 2em;
-}
-
 /*Footer*/
 footer {
-	width: 100%;
-	background-color: #000;
+  width: 100%;
+  background-color: #000;
   color: #fff;
   box-shadow: 0px 1px 10px #000000;
 }
@@ -791,7 +622,12 @@ footer section{
   text-align: left;
 }
 
+.footer-details section h3{
+  text-align: left;
+}
+
 .footer-details section p{
+  text-align: left;
   color: #808080;
 }
 
@@ -887,27 +723,4 @@ footer section{
     width: 75%;
   }
 
-}
-
-/*Extra bronnenlijst*/
-.bronnenlijst-wrapper ul li{
-  text-align: left;
-  width: 100%;
-  list-style-type: none;
-  margin: 10px auto;
-}
-
-.bronnenlijst-wrapper ul li a{
-  color: #6e6e6e;
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 1em;
-  max-width: 100%;
-}
-
-.footer-copyright{
-  /*position: absolute;*/
-  padding-bottom: 10px;
 }

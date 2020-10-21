@@ -10,122 +10,223 @@
 </head>
 <body>
 	<header>
-		<section>
-			<a href="#"> <img class="home-logo" src="img/blackoultine2_150x.png" alt="home logo"> </a>
-			<div class="navigation-right">
-				<a href="#"> <img class="search-logo" src="img/search.svg" alt="search icon"> </a>
-				<a href="#"> <img class="shopping-cart-logo" src="img/shopping-cart.svg" alt="shopping cart logo"> </a>
-			</div>
-		</section>
+			<nav>
+				<ul>
+					<li class="nav-drawer"><span class="nav-drawer-bar"></span></li>
+					<li><a href="#"> <img class="home-logo" src="img/logo_trans.png" alt="home logo"> </a></li>
+					<li><a href="#"> <img class="shopping-cart-logo" src="img/shopping-cart.svg" alt="shopping cart logo"> </a></li>
+				</ul>			
+			</nav>
 
-		<nav> <!-- Navigation Bar at top of page -->
-			<ul>
-			  <li class="navactive"><a href="index.html">HOME</a> </li> <!-- Home button with/ class="navactive" to add a special effect, because it's active-->
-			  <li><a href="#">SHOP <img class="dropdown-arrow" src="img/dropdown-arrow.png" alt="dropdown arrow"></a> <!--Cinemas Button -->
-			  	<ul> <!-- Adding a dropdown list for specific movies -->
-			  		<li><a href="index.html">Hello There</a></li> <!-- Pathe Cinema button -->
-			  		<li><a href="index.html">....</a></li> <!-- Cinecenter Cinema button -->
-			  		<li><a href="index.html">General Kenobi</a></li> <!-- Kriterion Cinema button -->
-			  	</ul>
-			  </li>
-			  <li><a href="index.html">CONTACT US</a></li> <!-- Movies (selection list) button -->
-			  <li><a href="index.html">ABOUT US</a></li> <!-- Movies (selection list) button -->
-			  <li><a href="index.html">FAQS</a></li> <!-- Movies (selection list) button -->
-			  <li id="account-id"><a href="account.html">Account</a></li>
+			<nav> <!-- Navigation Bar at top of page -->
+				<ul>
+					<li>
+						<form>
+					      <input type="search" name="q" placeholder="Search" aria-label="Search" class="drawer__search-input">
+					      <button type="submit" class="text-link drawer__search-submit"><img src="img/search.svg">
+					      </button>
+					    </form>
+					</li>
+				  <li><a href="index.html">HOME</a> </li>
+				  <li><a href="#">SHOP</a>
+				  	<button class="toggle-menu-button-shop" type="button"> <span>+</span></button>
+				  	<ul class="toggle-menu-shop" style="display: none;">
+				  		<li><a href="index.html">Ohsnap grip&trade;</a></li>
+				  		<li><a href="index.html">Snapcharge&trade;</a></li>
+				  		<li><a href="index.html">Snapstand&trade;</a></li>
+				  	</ul>
+				  </li>
+				  <li><a href="index.html">CONTACT US</a></li>
+				  <li><a href="index.html">ABOUT US</a></li>
+				  <li><a href="index.html">FAQS</a>
+				  	<button class="toggle-menu-button-faq" type="button"> <span>+</span></button>
+				  	<ul class="toggle-menu-faq" style="display: none;">
+				  		<li><a href="index.html">Ohsnap Grip</a></li>
+				  		<li><a href="index.html">Snapcharge</a></li>
+				  		<li><a href="index.html">Installation Tutorial & Usage Tutorial</a></li>
+				  		<li><a href="index.html">FAQ Home</a></li>
+				  	</ul>
+				  </li>
+				  <li id="account-id"><a href="account.html">Account</a></li>
 			</ul>
 		</nav>
-	</header>
 
-	<main>
-		<!--Ik gebruik een section om een achtergrond foto te tonen die aan de bovenkant fixed staat-->
-
-		<!--Cinema details is to give information about the Cinema in particular-->
-		<section class="cinema-details">
-			<article>
-				<section> <!--Section to make sure the Information elements are displayed next to eachother, and can be any amount of number-->
-					<img src="img/3-phones.png" alt="Fits all phones">
-					<h3>FITS ALL PHONES</h3>
-					<span style="font-weight: normal;">(We're inclusive)</span>
-				</section>	
+		<div class="slideshow-container">
+			<article class="mySlides">
+				<img src="img/ohsnap-foto-3.jpg" style="width:100%">
 				<section>
-					<img src="img/package.png" alt="Fits all phones">
-					<h3>EASY RETURNS</h3>
-					<span style="font-weight: normal;">(ALMOST TOO EASY)</span>
-				</section>
-				<section>
-					<img src="img/ribbon.png" alt="Fits all phones">
-					<h3>LIFETIME WARRANTY</h3>
-					<span style="font-weight: normal;">(AFTERLIFE INCLUDED)</span>
+			  		<h1 style="color: black;">GRIP, STAND, MAGNET. <span style = "display: block;">20 BEAUTIFUL COLORS.</span></h1>
+			  		<a href=""><span style="color: white;">SHOP GRIP</span></a>
 				</section>
 			</article>
-		</section>
 
-		<section class="images-cover">
-			<h1 class="white-title">THE OHSNAP GRIP<span style="font-weight: normal;">™</span></h1>
+			<article class="mySlides">
+				<img src="img/ohsnap-foto-2.jpg" style="width:100%">
+				<section>
+				  <h1 style="color: white;">ALL NEW POWER CAR BUNDLE.</h1>
+				  <a href=""><span style="color: white;">SHOP CAR POWER</span></a>
+				</section>
+			</article>
+
+			<article class="mySlides">
+				<img src="img/ohsnap-foto-1.jpg" style="width:100%">
+				<section>
+			  		<h1 style="color: black;">FACE THE DAY <span style = "display: block;">WITH A FULL BATTERY</span></h1>
+			  		<a href=""><span style="color: black;">SHOP SNAPCHARGE</span></a>
+				</section>
+			</article>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+	</header>
+
+	<main>		
+		<article>
+			<section>
+				<img src="img/3-phones.png">
+				<h3>FITS ALL PHONES</h3>
+				<p>(WE'RE INCLUSIVE)</p>
+			</section>
+			<section>
+				<img src="img/package.png">
+				<h3>EASY RETURNING</h3>
+				<p>(ALMOST TOO EASY)</p>
+			</section>
+			<section>
+				<img src="img/ribbon.png">
+				<h3>LIFETIME WARRANTY</h3>
+				<p>(AFTERLIFE INCLUDED)</p>
+			</section>
+		</article>
+
+		<section class="intro-stuk">
+			<h1>THE OHSNAP GRIP&trade;</h1>
 			<p>It’s a grip, stand, magnet, and more. Now available in 16+ color combinations and <b>backed by a lifetime warranty!</b></p>
-			<img src="img/whiteblack_1024x1024.png" alt="Cover image: iets">
 		</section>
-
-		<article class="cinema-details">	
-			<section>
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-			</section>	
-			<section>
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p> 
-			</section>
-			<section>
-				<h3>Lorem ipsum</h3>
-				<!-- <p><span><img class="address-icon" src="img/location-icon.png" alt="Location icon"> <a href="https://goo.gl/maps/YZjCdVyXecAyuNv9A" target="_blank"><b>Adres:</b> Vijzelstraat 15, 1017 HD Amsterdam</a></span> </p> -->
-				<!-- <p><span><img class="address-icon" src="img/phone-icon.png" alt="Location icon"> <a href="tel:088-515-2050"><b>Telefoon:</b> 088 515 2050</a></span></p> -->
-				<!-- <p><span><img class="address-icon" src="img/website-icon.png" alt="Location icon"> <a href="https://www.pathe.nl/bioscoop/demunt"><b>Website:</b> www.pathe.nl/bioscoop/demunt</a></span></p> -->
-			</section>
-		</article>
-
-		<!--Image cover with text in it-->
-		<section class="cinema-img-cover">
-			<h2 class="white-title">SNAPSTAND™</h2>
-			<img src="img/snapstandblack_1024x1024.png" alt="Cover image: iets">
-		</section>
-
-		<article class="cinema-details">	
-			<section>
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-			</section>	
-			<section>
-				<h3>Lorem ipsum</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p> 
-			</section>
-			<section>
-				<h3>Lorem ipsum</h3>
-				<!-- <p><span><img class="address-icon" src="img/location-icon.png" alt="Location icon"> <a href="https://goo.gl/maps/YZjCdVyXecAyuNv9A" target="_blank"><b>Adres:</b> Vijzelstraat 15, 1017 HD Amsterdam</a></span> </p> -->
-				<!-- <p><span><img class="address-icon" src="img/phone-icon.png" alt="Location icon"> <a href="tel:088-515-2050"><b>Telefoon:</b> 088 515 2050</a></span></p> -->
-				<!-- <p><span><img class="address-icon" src="img/website-icon.png" alt="Location icon"> <a href="https://www.pathe.nl/bioscoop/demunt"><b>Website:</b> www.pathe.nl/bioscoop/demunt</a></span></p> -->
-			</section>
-		</article>
-	</main>
 	
+
+		<iframe src="https://player.vimeo.com/video/429765575?title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="SquareGripDemoSmallText" bis_size="{&quot;x&quot;:15,&quot;y&quot;:1018,&quot;w&quot;:330,&quot;h&quot;:210,&quot;abs_x&quot;:15,&quot;abs_y&quot;:1018}" data-ready="true"></iframe>
+
+		<section class="ohsnap-grip">
+			<h1>OHSNAP GRIP</h1>
+			<h3>$19.99</h3>
+			<img id="ohsnap-grip-img" src="img/shop/white-black.png">
+			<div>
+				<label>BASE COLOR</label>
+				<button class="ohsnap-grip-button selected" name="base" value="white" type="button" style="background: linear-gradient(0deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="base" value="black" type="button" style="background-color: black;"></button>
+			</div>
+			<div>
+				<label>TRIM COLOR</label>
+				<button class="ohsnap-grip-button selected" name="trim" value="black" type="button" style="background-color: black;"></button>
+				<button class="ohsnap-grip-button" name="trim" value="white" type="button" style="background: linear-gradient(0deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="trim" value="purple" type="button" style="background: linear-gradient(0deg, rgba(77,0,77,1) 0%, rgba(128,0,128,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="trim" value="cyan" type="button" style="background: linear-gradient(0deg, rgba(0,144,173,1) 0%, rgba(0,212,255,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="trim" value="grey" type="button" style="background: linear-gradient(0deg, rgba(79,79,79,1) 0%, rgba(128,128,128,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="trim" value="orange" type="button" style="background: linear-gradient(0deg, rgba(215,79,0,1) 0%, rgba(255,165,0,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="trim" value="blue" type="button" style="background: linear-gradient(0deg, rgba(0,0,140,1) 0%, rgba(0,0,255,1) 100%);"></button>
+				<button class="ohsnap-grip-button" name="trim" value="red" type="button" style="background: linear-gradient(0deg, rgba(152,0,0,1) 0%, rgba(255,0,0,1) 100%);"></button>
+			</div>
+			<div class="button-div" >
+				<button type="button">$19.99 - ADD TO CART</button>
+				<button type="button">LEARN MORE</button>
+			</div>
+			<h4>Orders placed today will ship in late October</h4>
+		</section>
+
+		<section class="snapstuff">
+			<img src="img/thingy.png">
+			<h1>MOUNT AND CHARGE ANYWHERE WITH SNAPSTUFF</h1>
+		</section>
+
+		<section>
+			<h1>CAR POWER BUNDLE</h1>
+			<hr>
+			<p>Wireless Charging Car Mount</p>
+			<iframe src="https://player.vimeo.com/video/462777947?title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="squarecarpower.mov" bis_size="{&quot;x&quot;:25,&quot;y&quot;:2645,&quot;w&quot;:310,&quot;h&quot;:199,&quot;abs_x&quot;:25,&quot;abs_y&quot;:2645}" data-ready="true"></iframe>
+		</section>
+
+		<section>
+			<img src="img/phone.png">
+			<div class="button-div">
+				<button class="main-button" type="button">$69.99 - ADD TO CART</button>
+				<button class="secondary-button" type="button">CHOOSE GRIP COLOR</button>
+			</div>
+			<h4>Orders placed today will ship in late October</h4>
+			<p>With desk power, never worry about charging again! It’s your premium, 360 phone mount and fast-charging powerhouse. Perfect at home on your nightstand or at work on your desk. 
+				<strong> Comes with 1 ohsnap grip, 1 snapcharge, and 1 snapstand.</strong></p>
+		</section>
+
+		<section>
+			<h1>CAR POWER BUNDLE</h1>
+			<hr>
+			<p>Wireless Charging Car Mount</p>
+			<iframe src="https://player.vimeo.com/video/462777947?title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="squarecarpower.mov" bis_size="{&quot;x&quot;:25,&quot;y&quot;:2645,&quot;w&quot;:310,&quot;h&quot;:199,&quot;abs_x&quot;:25,&quot;abs_y&quot;:2645}" data-ready="true"></iframe>
+		</section>
+
+		<section>
+			<img src="img/phone.png">
+			<div class="button-div">
+				<button type="button">$69.99 - ADD TO CART</button>
+				<button type="button">CHOOSE GRIP COLOR</button>
+			</div>
+			<h4>Orders placed today will ship in late October</h4>
+			<p>With desk power, never worry about charging again! It’s your premium, 360 phone mount and fast-charging powerhouse. Perfect at home on your nightstand or at work on your desk. 
+				<strong> Comes with 1 ohsnap grip, 1 snapcharge, and 1 snapstand.</strong></p>
+		</section>
+
+		<section>
+			<hr>
+			<img src="img/ourmission.png">
+			<h1>OUR MISSION</h1>
+			<p>Everyone’s got a phone, but most mobile accessories are cheap, ugly, or just don’t work well together. That’s why at ohsnap, we make accessories that don’t suck: beautiful grips, stands, and chargers that make life with your phone less of a hassle, and a whole lot more awesome. </p>
+			<div class="button-div">
+				<button type="button">SHOP NOW</button>
+			</div>
+			
+			<hr>
+		</section>
+
+		<section>
+			<h1>DON'T MISS OUT</h1>
+			<p>New product releases and deals, straight to you.</p>
+		</section>
+	</main>
+
 	<footer>
 		<section class="footer-details">	
 			<section>
-				<h3>Information</h3>
-				<p><img class="address-icon" src="img/location-icon.png" alt="Location icon"> <a href="https://goo.gl/maps/YPgwydAvG31yCbwJA" target="_blank"><b>Adres:</b> Wibautstraat 2-4 1091 GM Amsterdam</a></p>
-				<p><img class="address-icon" src="img/phone-icon.png" alt="Location icon"> <a href="tel:020-599-5555"><b>Telefoon:</b> 020 599 5555</a></p>
-				<p><img class="address-icon" src="img/website-icon.png" alt="Location icon"> <a href="#"><b>Website:</b> www.hva.nl</a></p>
-			</section>	
-			<section class="sitemap-footer">
-				<h3>Sitemap</h3>
+				<h3>Menu</h3>
 				<p><a href="index.html">Home</a></p>
 				<p><a href="index.html">Shop</a></p>
 				<p><a href="index.html">Contact us</a></p>
 				<p><a href="index.html">About us</a></p>
 				<p><a href="index.html">FAQS</a></p>
 				<p><a href="index.html">Resource List (Bronnenlijst)</a></p>
+			</section>	
+			<section>
+				<h3>Legal</h3>
+				<p><a href="index.html">Privacy Policy</a></p>
+				<p><a href="index.html">Terms of Service</a></p>
+				<p><a href="index.html">Return Policy</a></p>
 			</section>
 
-			<!--contactformulier by Evi van der Linden-->
+			<section>
+				<h3>Follow us</h3>
+				<p><a href="index.html"></a></p>
+				<p><a href="index.html"></a></p>
+				<p><a href="index.html"></a></p>
+			</section>
+
 		    <form>
 		        <!--naam veld-->
 		        <label for="name">Name</label>
@@ -145,5 +246,6 @@
 			<p>&copy;2019 - 2020. All rights reserved. Clifton van Henten</p>
 		</section>
 	</footer>
+	<script src="js/ohsnap.js"></script>
 </body>
 </html>
