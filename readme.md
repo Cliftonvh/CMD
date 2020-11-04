@@ -20,7 +20,7 @@ Bij het eindgesprek kwam eruit dat ik een herkansing moest doen, dit kwam omdat 
 
 Ik had geen details pagina, en dat was voor de eindbeoordeling nodig om het vak te behalen. Ik had hier en daar wat foute html code geschreven, en er was nog niet genoeg gedaan.
 
-Ik was me ervan bewust dat de detailspagina niet aanwezig was, en had mij dus al een beetje voorbereid op een herkansing.
+De verschillende punten zal ik aanpassen en bij me hebben bij het volgende gesprek. Ook zal ik meer opties toevoegen aan de website voor een betere gebruikerservaring. Ik heb ervoor gekozen om een nachtmodus toe te voegen.
 
 **Screenshot(s):**
 
