@@ -3,14 +3,14 @@
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
-Website: http://217.123.119.144/fed/
+Website: https://cliftonvh.github.io/
 
 
 
 ## Bronnenlijst
 1. https://ohsnap.com/
-2. -bron 2-
-3. -...-
+2. w3schools.com - Tutorials / hulp / vraag & antwoord
+3. stackoverflow.com - Tutorials / hulp / vraag & antwoord
 
 
 
@@ -20,15 +20,22 @@ Website: http://217.123.119.144/fed/
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
+![Laatste progressie](images/screenshot-2.png)
+![Laatste progressie](images/screenshot-3.png)
+![Laatste progressie](images/screenshot-4.png)
+![Laatste progressie](images/screenshot-5.png)
+![Laatste progressie](images/screenshot-6.png)
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Ik heb door internet problemen geen voortgangsgesprek kunnen houden. Ik weet dat hieruit was gekomen dat ik op de goede weg was, maar dat er nog veel te doen was, en dat ik aan de bak moest in de vakantie om het allemaal bij te spijkeren.
 
+Ik heb me hierna volledig gefocussed op het werkend krijgen van de micro-interacties, dit was omdat ik ervoor heb gekozen om niet responsiveness te kiezen, maar surface-plane. De reden hierachter is omdat ik bij de vorige keer dat we moesten werken met html/css, ik mijn website responsive gemaakt had en hier niet verder naar omgekeken werd. Dit was voor mij echt heel jammer, omdat ik er ongelofelijk veel tijd in had gestoken.
 
+Ik heb dus besloten om toch maar voor alleen Surface Plane te kiezen, omdat ik dit ook het leukste vind om te doen.
+
+Ik heb door tijdslimiet geen 2e pagina kunnen maken, maar de functionaliteiten van die 2e pagina komen terug in de homepagina, waar ik een micro interactie volledig werkend heb kunnen krijgen. Deze interactie wordt ook gebruikt op de details pagina. Hierin is het namaken van de 2e pagina, alleen het overnemen van de structuur (html) en opmaak (css).
 
 ## Voortgang 2 (week 5)
 
