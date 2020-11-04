@@ -11,8 +11,13 @@ Website: https://cliftonvh.github.io/
 1. https://ohsnap.com/
 2. w3schools.com - Tutorials / hulp / vraag & antwoord
 3. stackoverflow.com - Tutorials / hulp / vraag & antwoord
-
-
+4. https://css-tricks.com
+- https://www.w3schools.com/html/html5_webstorage.asp
+- https://www.w3schools.com/css/css3_animations.asp
+- https://www.w3schools.com/css/css3_transitions.asp
+- https://www.w3schools.com/css/css3_buttons.asp
+- https://www.w3schools.com/cssref/css_selectors.asp
+- https://css-tricks.com/almanac/selectors/a/attribute/
 
 ## Eindgesprek (week 7/8)
 
