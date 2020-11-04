@@ -29,7 +29,7 @@
 
 p { margin-top: 15px; font-family: "Work Sans"; font-size: 18px; font-weight: 400; line-height: 1.6em; text-align: center;}
 span { font-family: Karla; font-size: 16px; font-weight: 400; letter-spacing: 0px; line-height: 1.38em; text-align: center;}
-h1, h2, h3{ font-family: Futura,sans-serif; font-style: normal; font-weight: 600; font-size: 1.875em; text-align: center; margin-top: 15px;}
+h1, h2, h3{ font-family: Futura,sans-serif; font-style: normal; font-weight: 600; font-size: 1.875em; text-align: center; margin-top: 15px; margin-bottom: 15px;}
 h4, h5, h6{ font-family: Futura,sans-serif; font-style: normal; font-weight: 600; text-align: center; margin-top: 15px;}
 
 html,body{
@@ -69,23 +69,6 @@ main section section{
 header{
   margin: auto;
   width: 100%;
-}
-
-.navigation-right{
-  position: relative;
-  float: right;
-}
-
-.shopping-cart-logo{
-  margin: 10px;
-  width: 22px;
-  height: 22px;
-}
-
-.search-logo{
-  margin: 10px;
-  width: 22px;
-  height: 22px;
 }
 
 /*******************************************/
@@ -161,6 +144,7 @@ nav:nth-of-type(1){
 }
 
 nav:nth-of-type(1) ul{
+  list-style-type: none;
   display: flex;
   align-items: center;
   padding: 15px 5px 0px 5px;
@@ -171,6 +155,11 @@ nav:nth-of-type(1) ul li{
   margin: 0 auto;
 }
 
+nav:nth-of-type(1) ul li:nth-of-type(3) a img{
+  margin: 10px;
+  width: 22px;
+  height: 22px;
+}
 /*******************************************/
             /*Hamburger Menu*/
 /*******************************************/
@@ -200,7 +189,7 @@ nav:nth-of-type(2) a{
   color: #232323;
   transition: color 0.3s ease;
 }
-nav:nth-of-type(2) ul{
+nav:nth-of-type(2) ul:nth-child(1){
   list-style: none;
   margin-top: 4rem;
   padding: 0;
@@ -214,15 +203,32 @@ nav:nth-of-type(2) ul li{
   display: block;
   width: auto;
 }
-.toggle-menu-button-shop, .toggle-menu-button-faq{
-  border-radius: 3px;
-  padding: 0px 15px;
+[data-toggle-menu] div{
   float: right;
+  padding: 0 20px;
 }
-.toggle-menu-button-shop span, .toggle-menu-button-faq span{
-  font-weight: bold;
-  color: #262626;
-  font-size: 1em;
+[data-toggle-menu] div button{
+  width: 20px;
+}
+[data-toggle-menu] div button svg{
+  fill:none;
+  stroke:#000000;
+  stroke-width:40;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+}
+[data-toggle-menu].expanded div button svg line:nth-of-type(1){
+  visibility: hidden;
+}
+[data-toggle-menu] ul{
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+  overflow: hidden;
+}
+[data-toggle-menu].expanded ul{
+  max-height: 500px;
+  transition: max-height 0.4s ease-in;
 }
 nav:nth-of-type(2) ul li form{
   padding-top: 20px;
@@ -249,18 +255,10 @@ nav:nth-of-type(2) ul li a:hover{
   background-color: #FFF;
   color: black;
 }
-nav:nth-of-type(2) ul li ul{
-  display: none;
-  list-style: none;
-  margin: auto;
-  padding: 20px 0;
-  visibility:hidden;
-  z-index: 99999;
-}
 nav:nth-of-type(2) ul li ul li{
   clear:both;
   border:0 none;
-  background: white;
+  background: inherit;
   padding: 0px;
 }
 nav:nth-of-type(2) ul li ul li a{
@@ -269,15 +267,74 @@ nav:nth-of-type(2) ul li ul li a{
   font-size: 0.5em;
   padding: 0px 20px;
 }
-nav:nth-of-type(2) ul li:hover ul{
-  visibility: visible;
-  opacity: 0.8;
-}
 nav:nth-of-type(2) ul li a img{
   width: 9px;
   height: 6px;
   margin-left: 5px;
   margin-bottom: 2px;
+}
+
+/*Nightmode Slider*/
+
+nav:nth-of-type(2) ul li label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+  right: 20px;
+}
+
+nav:nth-of-type(2) ul li label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+nav:nth-of-type(2) ul li label span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+nav:nth-of-type(2) ul li label span:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .round {
+  background-color: #2196F3;
+}
+
+input:focus + .round {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+nav:nth-of-type(2) ul li label span.round {
+  border-radius: 34px;
+}
+
+nav:nth-of-type(2) ul li label span.round:before {
+  border-radius: 50%;
 }
 
 /* Slideshow container */
@@ -424,45 +481,51 @@ nav:nth-of-type(2) ul li a img{
 }
 
 input, textarea, select, button{
-  background-color: #ffffff;
+  background-color: transparent;
   color: #333;
   border: 0;
   /*max-width: 100%;*/
 }
 
 /*3 foto's introductie*/
-main article{
+.order-row{
   margin-top: 5%;
   display: flex;
 }
 
-main article section{
+.order-row div{
+  padding: 10px;
   flex-direction: row;
   text-align: center;
 }
 
-main article section img{
-  height: auto;
-  width: 100px;
+.order-row div img{
+  height: 90px;
+  width: 90px;
 }
 
-main article section h3{
+.order-row div h3{
   font-size: 13px;
   color: #444444;
   letter-spacing: 1px;
   line-height: 1.38em;
+  margin-top: 0;
 }
 
-main article section p{
+.order-row div p{
   font-size: 8px;
 }
 
-/*introductie tekst*/
-.intro-stuk{
+main section:nth-of-type(1){
   margin-bottom: 15%;
 }
 
-main section:nth-of-type(1) h1, main section:nth-of-type(2) h1, .snapstuff h1{
+main section:nth-of-type(1){
+  font-size: 18px;
+  letter-spacing: 0.8px;;
+}
+
+main section:nth-of-type(1) h1, main section:nth-of-type(2) h1, .body-banner h1{
   font-size: 30px;
   letter-spacing: 3px;
   color: #030303;
@@ -477,16 +540,20 @@ main section img{
   height: auto;
 }
 
-main section hr{
-  width: 5%;
+main article{
+  width: 85%;
+  height: auto;
   margin: auto;
 }
 
-.intro-stuk p{
-  font-size: 18px;
-  letter-spacing: 0.8px;;
-  padding-left: 40px;
-  padding-right: 40px;
+main article img{
+  width: 100%;
+  height: auto;
+}
+
+main section hr{
+  width: 5%;
+  margin: auto;
 }
 
 iframe {
@@ -501,14 +568,14 @@ iframe {
 }
 
 /*ohsnap grip stuk*/
-.ohsnap-grip h3{
+#ohsnap-grip h3{
   color: #a3a3a3;
   font-size: 1.4em;
   margin-top: -10px;
   font-family: Futura;
 }
 
-.ohsnap-grip img{
+#ohsnap-grip img{
   width: 70%;
   height: auto;
   display: block;
@@ -535,7 +602,7 @@ iframe {
   margin-top: 2%;
 }
 
-.ohsnap-grip h4{
+#ohsnap-grip h4{
   text-align: center;
   margin-top: 5%;
   font-size: 16px;
@@ -546,11 +613,11 @@ iframe {
   text-transform: none;
 }
 
-.ohsnap-grip div{
+#ohsnap-grip div{
   padding: 20px;
 }
 
-.ohsnap-grip div label{
+#ohsnap-grip div label{
   padding-bottom: 20px;
   display: block;
 }
@@ -567,16 +634,22 @@ iframe {
   border: 1px solid black;
 }
 
+[data-button-color="white"] {background: linear-gradient(0deg, rgba(196,196,196,1) 0%, rgba(255,255,255,1) 100%);}
+[data-button-color="black"] { background-color: black;}
+[data-button-color="purple"] { background: linear-gradient(0deg, rgba(77,0,77,1) 0%, rgba(128,0,128,1) 100%);}
+[data-button-color="cyan"] { background: linear-gradient(0deg, rgba(0,144,173,1) 0%, rgba(0,212,255,1) 100%);}
+[data-button-color="grey"] { background: linear-gradient(0deg, rgba(79,79,79,1) 0%, rgba(128,128,128,1) 100%);}
+[data-button-color="orange"] { background: linear-gradient(0deg, rgba(215,79,0,1) 0%, rgba(255,165,0,1) 100%);}
+[data-button-color="blue"] { background: linear-gradient(0deg, rgba(0,0,140,1) 0%, rgba(0,0,255,1) 100%);}
+[data-button-color="red"] { background: linear-gradient(0deg, rgba(152,0,0,1) 0%, rgba(255,0,0,1) 100%);}
+
 /*snapstuff*/
-.snapstuff{
-  margin-top: 30%;
+.body-banner{
+  width: 100%;
   margin: auto;
-  background-color: #f6f6f6;
-  padding-top: 30%; 
-  padding-bottom: 30%;
 }
 
-.snapstuff img{
+.body-banner img{
   margin: auto;
 }
 
@@ -588,7 +661,7 @@ iframe {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: #000;
+  background-color: #101010;
   color: #fff;
   box-shadow: 0px 1px 10px #000000;
 }
@@ -718,4 +791,33 @@ footer article:nth-of-type(1) form input[type=submit]:hover{ /*over de button ho
     width: 75%;
   }
 
+}
+
+/*Nightmode overrules all*/
+
+.nightmode{
+  background-color: black !important;
+  stroke: #fff !important;
+}
+
+.nightmode-text{
+  color: white !important;
+}
+
+.nightmode-button{
+  background-color: #e9b9b9 !important;
+}
+
+.nav-drawer.nightmode .nav-drawer-bar,
+.nav-drawer.nightmode .nav-drawer-bar::after,
+.nav-drawer.nightmode .nav-drawer-bar::before{
+  background: white;
+}
+
+.nav-drawer.expanded .nav-drawer-bar.nightmode-text {
+  background: transparent;
+}
+
+.nightmode-svg{
+  filter: brightness(0) invert(1);
 }

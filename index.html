@@ -13,8 +13,8 @@
 			<nav>
 				<ul>
 					<li class="nav-drawer"><span class="nav-drawer-bar"></span></li>
-					<li><a href="#"> <img class="home-logo" src="img/logo_trans.png" alt="home logo"> </a></li>
-					<li><a href="#"> <img class="shopping-cart-logo" src="img/shopping-cart.svg" alt="shopping cart logo"> </a></li>
+					<li><a href="index.html"> <img src="img/logo_trans.png" alt="home logo"> </a></li>
+					<li><a href="#"> <img data-shoppingcart src="img/shopping-cart.svg" alt="shopping cart logo"> </a></li>
 				</ul>			
 			</nav>
 
@@ -23,24 +23,38 @@
 					<li>
 						<form>
 					      <input type="search" name="q" placeholder="Search" aria-label="Search" class="drawer__search-input">
-					      <button type="submit" class="text-link drawer__search-submit"><img src="img/search.svg">
+					      <button type="submit" class="text-link drawer__search-submit"><img data-searchlogo src="img/search.svg">
 					      </button>
 					    </form>
 					</li>
 				  <li><a href="index.html">HOME</a> </li>
-				  <li><a href="#">SHOP</a>
-				  	<button class="toggle-menu-button-shop" type="button"> <span>+</span></button>
-				  	<ul class="toggle-menu-shop" style="display: none;">
-				  		<li><a href="index.html">Ohsnap grip&trade;</a></li>
-				  		<li><a href="index.html">Snapcharge&trade;</a></li>
-				  		<li><a href="index.html">Snapstand&trade;</a></li>
+				  <li id="menu-shop" data-toggle-menu="shop"><a href="shop.html">SHOP</a>
+				  	<div>
+					  	<button type="button"> 
+					  		<svg x="0px" y="0px" viewBox="0 0 1105 1109">
+							<line class="st0" x1="552.38" y1="25.5" x2="552.38" y2="1084.75"/>
+							<line class="st0" x1="1082" y1="555.13" x2="22.75" y2="555.13"/>
+							</svg>
+						</button>
+					</div>
+				  	<ul>
+				  		<li><a href="shop.html">Ohsnap grip&trade;</a></li>
+				  		<li><a href="shop.html">Snapcharge&trade;</a></li>
+				  		<li><a href="shop.html">Snapstand&trade;</a></li>
 				  	</ul>
 				  </li>
 				  <li><a href="index.html">CONTACT US</a></li>
 				  <li><a href="index.html">ABOUT US</a></li>
-				  <li><a href="index.html">FAQS</a>
-				  	<button class="toggle-menu-button-faq" type="button"> <span>+</span></button>
-				  	<ul class="toggle-menu-faq" style="display: none;">
+				  <li id="menu-faq" data-toggle-menu="faq"><a href="index.html">FAQS</a>
+				  	<div>
+					  	<button type="button"> 
+					  		<svg x="0px" y="0px" viewBox="0 0 1105 1109">
+							<line class="st0" x1="552.38" y1="25.5" x2="552.38" y2="1084.75"/>
+							<line class="st0" x1="1082" y1="555.13" x2="22.75" y2="555.13"/>
+							</svg>
+						</button>
+					</div>
+				  	<ul>
 				  		<li><a href="index.html">Ohsnap Grip</a></li>
 				  		<li><a href="index.html">Snapcharge</a></li>
 				  		<li><a href="index.html">Installation Tutorial & Usage Tutorial</a></li>
@@ -48,6 +62,13 @@
 				  	</ul>
 				  </li>
 				  <li id="account-id"><a href="account.html">Account</a></li>
+				  <li>
+				  	<a href="#">Nightmode</a>
+				  	<label>
+					  <input type="checkbox">
+					  <span class="round"></span>
+					</label>
+				</li>
 			</ul>
 		</nav>
 
@@ -56,7 +77,7 @@
 				<img src="img/ohsnap-foto-3.jpg" style="width:100%">
 				<section>
 			  		<h1 style="color: black;">GRIP, STAND, MAGNET. <span style = "display: block;">20 BEAUTIFUL COLORS.</span></h1>
-			  		<a href=""><span style="color: white;">SHOP GRIP</span></a>
+			  		<a href="shop.html"><span style="color: white;">SHOP GRIP</span></a>
 				</section>
 			</article>
 
@@ -64,7 +85,7 @@
 				<img src="img/ohsnap-foto-2.jpg" style="width:100%">
 				<section>
 				  <h1 style="color: white;">ALL NEW POWER CAR BUNDLE.</h1>
-				  <a href=""><span style="color: white;">SHOP CAR POWER</span></a>
+				  <a href="shop.html"><span style="color: white;">SHOP CAR POWER</span></a>
 				</section>
 			</article>
 
@@ -72,7 +93,7 @@
 				<img src="img/ohsnap-foto-1.jpg" style="width:100%">
 				<section>
 			  		<h1 style="color: black;">FACE THE DAY <span style = "display: block;">WITH A FULL BATTERY</span></h1>
-			  		<a href=""><span style="color: black;">SHOP SNAPCHARGE</span></a>
+			  		<a href="shop.html"><span style="color: black;">SHOP SNAPCHARGE</span></a>
 				</section>
 			</article>
 
@@ -90,25 +111,25 @@
 	</header>
 
 	<main>		
-		<article>
-			<section>
+		<article class="order-row">
+			<div>
 				<img src="img/3-phones.png">
 				<h3>FITS ALL PHONES</h3>
 				<p>(WE'RE INCLUSIVE)</p>
-			</section>
-			<section>
+			</div>
+			<div>
 				<img src="img/package.png">
 				<h3>EASY RETURNING</h3>
 				<p>(ALMOST TOO EASY)</p>
-			</section>
-			<section>
+			</div>
+			<div>
 				<img src="img/ribbon.png">
 				<h3>LIFETIME WARRANTY</h3>
 				<p>(AFTERLIFE INCLUDED)</p>
-			</section>
+			</div>
 		</article>
 
-		<section class="intro-stuk">
+		<section>
 			<h1>THE OHSNAP GRIP&trade;</h1>
 			<p>It’s a grip, stand, magnet, and more. Now available in 16+ color combinations and <b>backed by a lifetime warranty!</b></p>
 		</section>
@@ -116,8 +137,8 @@
 
 		<iframe src="https://player.vimeo.com/video/429765575?title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="SquareGripDemoSmallText" bis_size="{&quot;x&quot;:15,&quot;y&quot;:1018,&quot;w&quot;:330,&quot;h&quot;:210,&quot;abs_x&quot;:15,&quot;abs_y&quot;:1018}" data-ready="true"></iframe>
 
-		<section class="ohsnap-grip">
-			<h1>OHSNAP GRIP</h1>
+		<section id="ohsnap-grip">
+			<h2>OHSNAP GRIP</h2>
 			<h3>$19.99</h3>
 			<img id="ohsnap-grip-img" src="img/shop/white-black.png">
 			<div>
@@ -140,22 +161,22 @@
 				<button type="button">$19.99 - ADD TO CART</button>
 				<button type="button">LEARN MORE</button>
 			</div>
-			<h4>Orders placed today will ship in late October</h4>
+			<p>Orders placed today will ship in late October</p>
 		</section>
 
-		<section class="snapstuff">
-			<img src="img/thingy.png">
-			<h1>MOUNT AND CHARGE ANYWHERE WITH SNAPSTUFF</h1>
+		<section class="body-banner">
+			<img src="img/thingy.png" alt="mount and charge">
+			<h3>MOUNT AND CHARGE ANYWHERE WITH SNAPSTUFF</h3>
 		</section>
 
 		<section>
-			<h1>CAR POWER BUNDLE</h1>
+			<h3>CAR POWER BUNDLE</h3>
 			<hr>
 			<p>Wireless Charging Car Mount</p>
 			<iframe src="https://player.vimeo.com/video/462777947?title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="squarecarpower.mov" bis_size="{&quot;x&quot;:25,&quot;y&quot;:2645,&quot;w&quot;:310,&quot;h&quot;:199,&quot;abs_x&quot;:25,&quot;abs_y&quot;:2645}" data-ready="true"></iframe>
 		</section>
 
-		<section>
+		<article>
 			<img src="img/phone.png">
 			<div class="button-div">
 				<button class="main-button" type="button">$69.99 - ADD TO CART</button>
@@ -164,16 +185,16 @@
 			<h4>Orders placed today will ship in late October</h4>
 			<p>With desk power, never worry about charging again! It’s your premium, 360 phone mount and fast-charging powerhouse. Perfect at home on your nightstand or at work on your desk. 
 				<strong> Comes with 1 ohsnap grip, 1 snapcharge, and 1 snapstand.</strong></p>
-		</section>
+		</article>
 
-		<section>
+		<article>
 			<h1>CAR POWER BUNDLE</h1>
 			<hr>
 			<p>Wireless Charging Car Mount</p>
 			<iframe src="https://player.vimeo.com/video/462777947?title=0&amp;byline=0&amp;portrait=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;loop=1&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" title="squarecarpower.mov" bis_size="{&quot;x&quot;:25,&quot;y&quot;:2645,&quot;w&quot;:310,&quot;h&quot;:199,&quot;abs_x&quot;:25,&quot;abs_y&quot;:2645}" data-ready="true"></iframe>
-		</section>
+		</article>
 
-		<section>
+		<article>
 			<img src="img/phone.png">
 			<div class="button-div">
 				<button type="button">$69.99 - ADD TO CART</button>
@@ -182,24 +203,24 @@
 			<h4>Orders placed today will ship in late October</h4>
 			<p>With desk power, never worry about charging again! It’s your premium, 360 phone mount and fast-charging powerhouse. Perfect at home on your nightstand or at work on your desk. 
 				<strong> Comes with 1 ohsnap grip, 1 snapcharge, and 1 snapstand.</strong></p>
-		</section>
+		</article>
 
-		<section>
+		<article>
 			<hr>
-			<img src="img/ourmission.png">
-			<h1>OUR MISSION</h1>
+			<img data-ourmission src="img/ourmission.png">
+			<h2>OUR MISSION</h2>
 			<p>Everyone’s got a phone, but most mobile accessories are cheap, ugly, or just don’t work well together. That’s why at ohsnap, we make accessories that don’t suck: beautiful grips, stands, and chargers that make life with your phone less of a hassle, and a whole lot more awesome. </p>
 			<div class="button-div">
 				<button type="button">SHOP NOW</button>
 			</div>
 			
 			<hr>
-		</section>
+		</article>
 
-		<section>
-			<h1>DON'T MISS OUT</h1>
+		<article>
+			<h2>DON'T MISS OUT</h2>
 			<p>New product releases and deals, straight to you.</p>
-		</section>
+		</article>
 	</main>
 
 	<footer>
@@ -207,7 +228,7 @@
 			<section>
 				<h3>Menu</h3>
 				<p><a href="index.html">Home</a></p>
-				<p><a href="index.html">Shop</a></p>
+				<p><a href="shop.html">Shop</a></p>
 				<p><a href="index.html">Contact us</a></p>
 				<p><a href="index.html">About us</a></p>
 				<p><a href="index.html">FAQS</a></p>
@@ -242,10 +263,12 @@
 		    </form>
 
 		</article>
-		<section>
+		<div>
 			<h6>&copy;2019 - 2020. All rights reserved. Clifton van Henten</h6>
-		</section>
+		</div>
 	</footer>
 	<script src="js/ohsnap.js"></script>
+	<script src="js/ohsnap-slideshow.js"></script>
+	<script src="js/ohsnap-shop.js"></script>
 </body>
 </html>
