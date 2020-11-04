@@ -16,7 +16,11 @@ Website: https://cliftonvh.github.io/
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Bij het eindgesprek kwam eruit dat ik een herkansing moest doen, dit kwam omdat ik bepaalde punten niet had, en deze waren nodig om de eindbeoordeling te behalen.
+
+Ik had geen details pagina, en dat was voor de eindbeoordeling nodig om het vak te behalen. Ik had hier en daar wat foute html code geschreven, en er was nog niet genoeg gedaan.
+
+Ik was me ervan bewust dat de detailspagina niet aanwezig was, en had mij dus al een beetje voorbereid op een herkansing.
 
 **Screenshot(s):**
 
