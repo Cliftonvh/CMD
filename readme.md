@@ -11,12 +11,21 @@ Website: https://cliftonvh.github.io/
 1. https://ohsnap.com/
 2. w3schools.com - Tutorials / hulp / vraag & antwoord
 3. stackoverflow.com - Tutorials / hulp / vraag & antwoord
-
-
+4. https://css-tricks.com
+- https://www.w3schools.com/html/html5_webstorage.asp
+- https://www.w3schools.com/css/css3_animations.asp
+- https://www.w3schools.com/css/css3_transitions.asp
+- https://www.w3schools.com/css/css3_buttons.asp
+- https://www.w3schools.com/cssref/css_selectors.asp
+- https://css-tricks.com/almanac/selectors/a/attribute/
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Bij het eindgesprek kwam eruit dat ik een herkansing moest doen, dit kwam omdat ik bepaalde punten niet had, en deze waren nodig om de eindbeoordeling te behalen.
+
+Ik had geen details pagina, en dat was voor de eindbeoordeling nodig om het vak te behalen. Ik had hier en daar wat foute html code geschreven, en er was nog niet genoeg gedaan.
+
+De verschillende punten zal ik aanpassen en bij me hebben bij het volgende gesprek. Ook zal ik meer opties toevoegen aan de website voor een betere gebruikerservaring. Ik heb ervoor gekozen om een nachtmodus toe te voegen.
 
 **Screenshot(s):**
 
